@@ -1,11 +1,14 @@
 <!DOCTYPE>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Temperture conversion</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+</head>  
 <body>
     <p>Click the button to convert fahrenheit to celsius.</p>
 
@@ -17,6 +20,14 @@ var degCent;
 degCent = 5/9 * (degFahren - 32);
 document.write(degFahren + "\xB0 Fahrenheit is " + degCent +
 "\xB0 celsius<br/>");
+    if (degCent < 0)
+{
+    
+document.body.style.backgroundColor="red";
+}
+if (degCent > 100)
+
+document.body.style.fontColor=("white");  
 }
 </script>
 </body>
