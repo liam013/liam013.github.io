@@ -10,7 +10,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>  
 <body>
-    <p>Click the button to convert fahrenheit to celsius.</p>
+    <p>Start by clicking the button, to convert fahrenheit to celsius.</p>
 
 <button onclick="myFunction()">Convert Temperature</button>
 <script>
@@ -20,14 +20,15 @@ var degCent;
 degCent = 5/9 * (degFahren - 32);
 document.write(degFahren + "\xB0 Fahrenheit is " + degCent +
 "\xB0 celsius<br/>");
-    if (degCent < 0)
+    if (degCent < -40)
 {
     
-document.body.style.backgroundColor="red";
+document.body.style.backgroundColor = "#d9edf7"; 
+
 }
 if (degCent > 100)
 
-document.body.style.fontColor=("white");  
+document.body.style.backgroundColor="#a94442";  
 }
 </script>
 </body>
