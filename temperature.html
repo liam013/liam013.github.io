@@ -18,15 +18,14 @@ function myFunction() {
 var degFahren = Number(prompt("Enter the degrees Fahrenheit",0));
 var degCent;
 degCent = 5/9 * (degFahren - 32);
-document.write(degFahren + "\xB0 Fahrenheit is " + degCent +
-"\xB0 celsius<br/>");
-    if (degCent < -40)
+document.write(degFahren + "\xB0 fahrenheit is " + degCent + "\xB0 celsius.");
+    if (degCent <= -40)
 {
     
 document.body.style.backgroundColor = "#d9edf7"; 
 
 }
-if (degCent > 100)
+if (degCent >= 100)
 
 document.body.style.backgroundColor="#a94442";  
 }
