@@ -7,41 +7,181 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+    body{
+    line-height: 1.5;
+    font-size: 16px;
+    }
+    .img-left{
+    width:160px;
+    height:200px;
+    clear:left;
+    margin-top: 20px;
+
+    }
+    
+    .img-center{
+    width: 575px;
+    height: 238px;
+    margin: 5px;
+    }
+    .img-right{
+    width: 160px;
+    height: 200px;
+    float: right;
+    margin-top: 20px;
+        
+    clear: both;
+    }
+    
+    .box-container { 
+   height: 300px;
+   overflow: auto; 
+    }
+     .media-object-example{
+    	margin: 20px;
+    }
+    .btntxt{
+        margin-top:10px;
+    }
+    
+    .panel-placement{
+    margin:20px;
+    }
+
+   
+    </style>
+    
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-primary">
-           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    
+    <!-- Jumbotron begins -->
+      <div class="jumbotron hidden-xs">
+    <h1>A Quick Headphone Guide</h1> 
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+    responsive, mobile-first projects on the web.</p> 
+  </div>
+     <!-- Jumbotron begins -->
+    
+    <!-- Nav bar begins  -->
+    <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Head-fi Community</a>
+      <a class="navbar-brand" href="#">Reddit Community</a>
+      <a class="navbar-brand" href="#">Text Reviews</a>
+      <a class="navbar-brand" href="">Video Reviews</a>
+        <button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-cloud"></span>Git Repo</button>
+        <button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-cd"></span>Discogs</button>
+    </div>
+        <button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-music"></span> Rateyourmusic</button>
+        <button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-refresh"></span> Refresh</button>
+       </nav>
+    <!-- Nav bar ends  -->
+    <div class="bs-example">
+	<hr>
+	<div class="progress progress-striped active">
+        <div class="progress-bar progress-bar-success" style="width: 15%">
+            Source (15%)
         </div>
-        
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-info">
-           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="progress-bar progress-bar-warning" style="width: 10%">
+            DAC (5%)
         </div>
-        
-        <div class="clearfix visible-sm-block"></div>
-        
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-danger">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        
-        <div class="clearfix visible-md-block"></div>
-        
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        <div class="clearfix visible-sm-block"></div>
-        
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-info">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-danger">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="progress-bar progress-bar-grey" style="width: 20%">
+            Amp (20%)
         </div>
-        
+        <div class="progress-bar progress-bar-success" style="width: 40%">
+            Headphones/Speakers (40%)
+        </div>
+         <div class="progress-bar progress-bar-danger" style="width: 15%">
+            Placebo (20%)
+        </div>
     </div>
     <hr>
+</div>
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-4 col-lg-6 bg-info">
+           <h3>1Let's Get Started</h3> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+         <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-4 col-lg-6">
+            
+           <h3>Favourite Headphones, of All time</h3>2Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        
+        <div class="clearfix visible-sm-block"></div>
+        
+        <div class="col-sm-4 col-lg-6">
+            <div class="center-block">
+                       <h3>No replacement for audition</h3>4Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="clearfix visible-sm-block"></div>
+               
+               
+                </div>
+        
+        
+        <div class="clearfix visible-md-block bg-danger"></div>
+        
+        <div class="col-sm-4 col-lg-6 bg-info">
+            <img class="img-rounded img-responsive img-center" src=../../images/gs1000e.jpg>
+  
+        </div>
+        <div class="col-sm-4 col-lg-6 bg-info">
+            <h2>Notable Reviewers</h2>
+<div class="bs-example">
+	<div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img src="../images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+            </a>
+        </div>
+         <div class="clearfix visible-sm-block"></div>
+        <div class="media-body">
+            <h4 class="media-heading">Zeos <small><i>Posted on January 10, 2014</i></small></h4>
+            <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+        </div>
+    </div>
+    <hr />
+    <div class="media">
+        <div class="media-body">
+            <h4 class="media-heading">Tyll <small><i>Posted on January 10, 2014</i></small></h4>
+            <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+        </div>
+        <div class="media-right">
+            <a href="#">
+                <img src="../images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+            </a>
+        </div>
+    </div>
+    <hr />
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img src="../images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Jude <small><i>Posted on January 10, 2014</i></small></h4>
+            <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
         </div>
     </div>
 </div>
+        </div>
+         <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-4 col-lg-6 box-container">
+        <h3>Resources</h3>6Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+     
+    
+    
+</div>
+    
+       <div class="panel panel-primary panel-placement">
+    <div class="panel-heading panel-placement">Music listening is an auditory experience and thus open to an incomporable amount of subjectivity, do not rely soley on internet reviews</div>
+           
+      <div class="panel-footer planel-danger panel-placement">Any profane or explicit language present in any video or article linked is exclusively for entertainment purposes</div>
+            </div>
+           </div>
+   
 </body>
 </html>                                		
