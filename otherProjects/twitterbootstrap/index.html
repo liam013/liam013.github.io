@@ -2,28 +2,39 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Bootstrap 3 Responsive Layout Example</title>
+<title>LM: Twitter Bootstrap</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- I attempted to put the manual styling in its own css file, but there were conflicts with the existing bootstrap css files -->
+    
+     <!-- custom favicon link -->
+    <link rel="icon" href="../../images/favicon.ico"/>
+    
 <style>
     body{
     line-height: 1.5;
     font-size: 16px;
     }
+    /*making the jumbotron's bg colour the same as 'bg-info' used on different sections of the page */
+    .jtron-bg{
+    background-color: #d9edf7;
+    margin-top: 20px;
+    }
   
-    
+    /* sizing the image of the avatars for the 'Notable Reviewers' section */
     .img-avatar{
     height:100px;
     width:100px;
     }
-    
+    /* image styling on the one picture of headphones, so that it fits into the row/column layout */
     .img-center{
     width: 575px;
     height: 238px;
     margin: 5px;
     }
+    /*styling of earch of the rows so each section lines up and is dimensionally symetrical */
     .text-container {
     height: 248px; 
     width: 585px;
@@ -43,6 +54,8 @@
     .panel-placement{
     margin:20px;
     }
+    
+    /*restyles the dimensions of each section of text to remain responsive */
 @media (max-width: 400px) {
     .text-container{
     width:auto;
@@ -51,14 +64,16 @@
 }
     </style>
     
+   
+    
 </head>
 <body>
 <div class="container">
     
     <!-- Jumbotron begins -->
-      <div class="jumbotron hidden-xs">
+      <div class="jumbotron jtron-bg hidden-xs">
     <h1>A Quick Headphone Guide</h1> 
-    <p>Liam Macdonald's simple steps to affordable highquality audio.</p> 
+    <p>A rundown to get you started.</p> 
   </div>
      <!-- Jumbotron ends -->
     
@@ -91,7 +106,7 @@
      
         
         <!-- working link that refreshes the current page -->
-        <form style="display: inline" action="." method="get"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-refresh"></span> </button></form>
+        <form style="display: inline" action="#" method="get"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-refresh"></span> </button></form>
         
     </div>
        
@@ -100,7 +115,7 @@
     
     <!--Layered Progress Bar begins -->
     
-    <!-- the layered bar was used to concisley breakdown the components of an audio system and its relative importance, I felt having mulitple individual progress bars would look jarring -->
+    <!-- the layered bar was used to concisley breakdown the components of an audio system, and coloured to symbolize its relative importance (be wary of the 20% placebo effect), I felt having mulitple individual progress bars would look jarring and I couldn't figure out a way to use it and feel natural with the design  -->
     <div class="bs-example">
 	<hr>
 	<div class="progress progress-striped active">
