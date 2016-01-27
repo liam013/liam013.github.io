@@ -1,30 +1,31 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>W3: Multiplication Q4</title>
+    <style>
+        body {
+            width: 400px;
+        }
+    </style>
 </head>
+
 <body>
-<style>
-    body{
-    width:400px;
-        
-    }
-</style>
-<body>
-<script>
-var userNm = prompt("Please enter a number");
-    
-         if (isNaN(userNm)){
-alert("That's not a number, please retry.");
-}
+    <script>
+        var userNm = prompt("Please enter a number");
 
-for (var i = 0; i <= userNm; i++){
-    var result = userNm * i;
-    document.write(result + '<br>');
-}
-</script>
+        if (isNaN(userNm)) {
+            alert("That's not a number, please retry.");
+        }
 
+        var userNm = prompt("Please re-enter the number.");
 
+        for (var i = 0; i <= userNm; i++) {
+            var result = userNm * i;
+            document.write(result + '<br>');
+        }
+    </script>
 </body>
+
 </html>
