@@ -67,6 +67,7 @@
     <div class="navbar-header">
         
         <!--Badge used to highlight the size of the community by displaying number of posts on the site -->
+        
       <a class="navbar-brand" href="http://www.head-fi.org/">Head-fi Community <span class="badge">100,000+ articles</span></a>
         
         <!--Badge used to highlight the size of the community by displaying number of users on the site -->
@@ -76,19 +77,21 @@
         
       <a class="navbar-brand" href="https://www.youtube.com/user/ZeosReviews">Video Reviews</a>
         
+        <!-- form tags used in order to style a button with an <a> tag.  <a> tags don't allow nesting of <button> so the <form> tag with a "action..get" served as a substitute for an <a> tag  -->
+        
         <!-- working link to my git repoistory -->
-    <a href="https://github.com/liam013/liam013.github.io"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-cloud"></span>Git</button></a>
+    <form style="display: inline" action="https://github.com/liam013/liam013.github.io" method="get"><button  type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-cloud"></span>Git</button></form>
         
         <!-- working link to Discogs website, a place to buy/sell/trade music -->
-        <a href="http://www.discogs.com/search/"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-cd"></span>Discog</button></a>
+        <form style="display: inline" action="http://www.discogs.com/search/" method="get"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-cd"></span>Discog</button></form>
         
         
         <!-- working link to RateYourMusic a great site to find new releases and obscure genres  -->
-         <a href="https://rateyourmusic.com/"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-music"></span>RYM</button></a>
-        
+        <form style="display: inline" action="https://rateyourmusic.com/" method="get"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-music"></span>RYM</button></form>
+     
         
         <!-- working link that refreshes the current page -->
-        <a href="."><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-refresh"></span>  </button></a>
+        <form style="display: inline" action="." method="get"><button type="submit" class="btn btn-link btntxt"><span class="glyphicon glyphicon-refresh"></span> </button></form>
         
     </div>
        
