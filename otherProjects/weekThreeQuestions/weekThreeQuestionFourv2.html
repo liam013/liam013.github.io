@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+<body>
+<script>
+    
+    
+    //Brings in user inputs needed for calculations. Parses them to integers to work with later calculations
+    while (true) {
+    var start = parseInt(prompt("Which number would you like to begin with?"));
+    console.log("Starting number is " + start);
+    
+    
+            if (isNaN(start)) {
+                alert("That's not a number, please retry.");
+                var start = prompt("Please re-enter a number.");
+                if (start == -1) {
+                alert("You broke the code :(");
+                break;
+                }
+            } else if (start == -1) {
+                alert("You broke the code :(");
+                break;
+            }
+           
+     
+    
+    var lowerLimit = parseInt(prompt("Where in the times table would you like to begin?"));
+    console.log("Lower Limit is " + lowerLimit);
+         if (isNaN(lowerLimit)) {
+                alert("That's not a number, please retry.");
+                var lowerLimit = prompt("Please re-enter a number.");
+         }
+        if (lowerLimit == -1) {
+                alert("You broke the code :(");
+                break;
+                }
+    
+    var upperLimit = parseInt(prompt("Where in the times table would you like to end?"));
+    console.log("Upper Limit is " + upperLimit);
+        if (isNaN(upperLimit)) {
+                alert("That's not a number, please retry.");
+                var upperLimit = prompt("Please re-enter a number.");
+         }
+        if (upperLimit == -1) {
+                alert("You broke the code :(");
+                break;
+                }
+    
+    //starts function, passes variable start as parameter to function
+    timesTable(start);
+    
+    }
+    //number is intial value
+    //number is parameter (in this case the variable start)
+    function timesTable( number ) {
+        //loop through values
+        for (var i = lowerLimit; i <= upperLimit; i++) {
+            var result = number * i;
+            console.log(result);
+            //output values
+            document.write(result + '<br>' + '</hr>');
+        }
+        
+    }
+    
+     
+
+</script>
+
+
+
+</body>
+</html>
