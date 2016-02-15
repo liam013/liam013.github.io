@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>W3: Multiplication Q2</title>
+    <style>
+        body {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+         var start = parseInt(prompt("How long would you like the side to be?"));
+         if (isNaN(start)) {
+                alert("That's not a number, please retry.");
+                var start = prompt("Please re-enter a number.");
+         }
+     var str = " " + "<br>";
+                    
+                for (var i=1; i<=start; i++){
+              
+                
+                for(var j=1; j<=8; j++){
+            
+                   if((i+j)%2==0){
+                       document.write("#");
+                   }
+                    else{
+                        document.write(" ");
+                        }
+                }
+                
+                
+                
+     document.write(str);
+                }
+       
+            
+       
+        
+    </script>
+</body>
+
+</html>
