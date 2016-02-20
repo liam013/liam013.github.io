@@ -12,13 +12,17 @@
 </head>
 
 <body>
+    <p>kakkerlak</p>
+    <p id="kak"></p>
     <script>
  
-countChar = "kakkerlak";
-document.write('kakkerlak', "<br><br>");
-document.write('k count is',':' , " ", countChar.replace(/[^k]/g, "").length);
+var countK = "kakkerlak";
 
+var numLower = countK.replace(/[^k]/g, '').length;
+        
+document.getElementById("kak").innerHTML ="k count is:" + " " + numLower;
     </script>
 </body>
 
 </html>
+ 

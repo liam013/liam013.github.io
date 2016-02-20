@@ -12,11 +12,15 @@
 </head>
 
 <body>
+      <p>BBC</p>
+  <p id="bbc"></p>
+  
     <script>
  
-countBs = "BBC";
-document.write('BBC', "<br><br>");
-document.write('B count is', ':', " ", countBs.replace(/[^B]/g, "").length);
+var countBs = "BBC";
+ var numUpper = countBs.length - countBs.replace(/[B]/g, '').length;  
+ 
+document.getElementById("bbc").innerHTML ="B count is:" + " " + numUpper ;
 
     </script>
 </body>
