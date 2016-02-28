@@ -6,50 +6,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <title>Q6 Display</title>
-   
- 
+
+
 </head>
 
 <body>
-    
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-   
-    <li role="presentation" class="active"><a href="#q6" aria-controls="q6" role="tab" data-toggle="tab">Q6</a></li>
-   
-  </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-          
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
 
-<!-- Question 6 Start -->
-    <div role="tabpanel" class="tab-pane tab-pane active" id="q6">
-        <div class="row">
-          <div class="col-md-12">
-          <pre>     
+        <li role="presentation" class="active"><a href="#q6" aria-controls="q6" role="tab" data-toggle="tab">Q6</a></li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+
+        <!-- Question 6 Start -->
+        <div role="tabpanel" class="tab-pane tab-pane active" id="q6">
+            <div class="row">
+                <div class="col-md-12">
+                    <pre>     
      Question 6 code:
-            
-
-
-          </pre>
-          </div>
-          <div class="col-md-12">
-              <!-- button -->  
-            <button id="q6-button" class="btn btn-default" type="button">Question Six Solution</button>
-          </div>
-          <div class="col-md-12">
-              <!-- result --> 
-            <div id="q6-result"></div> 
-          </div>
-          </div>
-      </div>
-      
-  
-    
-        <script>
-            $(document).ready(function(){
             var lowerLimit = 0;
             var upperLimit = 0;
             
@@ -68,16 +48,12 @@
                 
                 
                 var arr = [];
-                //arr.push(upperLimit);
-                // push adds to an array
-                // e.g. arr.push(1);
               
                 
             if(lowerLimit <= upperLimit){
                 
                 
                 for (lowerLimit; lowerLimit<= upperLimit; lowerLimit++){
-               // console.log("start: " + start);
                 arr.push(lowerLimit);
               
                     
@@ -87,42 +63,112 @@
                 }
                 else{
                 alert ("You broke the browser :(");
-                var rangeAnswer = "Undefined";
+                return "Undefined";
                 }
                 return arr;
                 }
-                
- 
-       
-       
-      
-
 
       $("#q6-button").on("click", function() {
           
-          if(lowerLimit > upperLimit){
-          var rangeAnswer = "Undefined";
-          }
-          
-        else{
+         
         var rangeAnswer = range(lowerLimit, upperLimit);
+        if(rangeAnswer == "Undefined"){
+             
+             $("#q6-result").html("Answer is: " + rangeAnswer);
+           
         }
-          
+        else{
         $("#q6-result").html("Answer is: " + rangeAnswer);
-       
+        }
         //ends click function        
       });
                 
            
         //ends document ready function
             });
-            
-            
+          </pre>
+                </div>
+                <div class="col-md-12">
+                    <!-- button -->
+                    <button id="q6-button" class="btn btn-default" type="button">Question Six Solution</button>
+                </div>
+                <div class="col-md-12">
+                    <!-- result -->
+                    <div id="q6-result"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            $(document).ready(function () {
+                var lowLimit = 0;
+                var upLimit = 0;
+
+                function range(lowLimit, upLimit) {
+                    var lowLimit = parseInt(prompt("What number would you like to being with?"));
+                    if (isNaN(lowLimit)) {
+                        alert("That's not a number, please retry.");
+                        var lowLimit = prompt("Please re-enter a number.");
+                    }
+                    var upLimit = parseInt(prompt("What number would you like to end with?"));
+                    if (isNaN(upLimit)) {
+                        alert("That's not a number, please retry.");
+                        var upLimit = prompt("Please re-enter a number.");
+                    }
+
+
+
+                    var arr = [];
+                    //arr.push(upperLimit);
+                    // push adds to an array
+                    // e.g. arr.push(1);
+
+
+                    if (lowLimit <= upLimit) {
+
+
+                        for (lowLimit; lowLimit <= upLimit; lowLimit++) {
+                            // console.log("start: " + start);
+                            arr.push(lowLimit);
+
+
+
+                        }
+
+                    } else {
+                    //if user unders lowerLimit > upperLimit that would cause an infinite loop
+                        alert("You broke the browser :(");
+                        return "Undefined";
+                    }
+                    return arr;
+                    
+                //ends range function
+                }
+
+                $("#q6-button").on("click", function () {
+
+
+                    var rangeAnswer = range(lowLimit, upLimit);
+                //if statement writes answer as undefined when user enters an invalid array
+                    if (rangeAnswer == "Undefined") {
+
+                        $("#q6-result").html("Answer is: " + rangeAnswer);
+
+                    } else {
+                        $("#q6-result").html("Answer is: " + rangeAnswer);
+                    }
+                    //ends click function        
+                });
+
+
+                //ends document ready function
+            });
         </script>
 
-   </div>
+    </div>
 </body>
 
 
 </html>
- 

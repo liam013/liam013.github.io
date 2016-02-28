@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Q8 Display</title>
+
+
+</head>
+
+<body>
+
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+
+        <li role="presentation" class="active"><a href="#q9" aria-controls="q9" role="tab" data-toggle="tab">Q9</a></li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+
+        <!-- Question 9 Start -->
+        <div role="tabpanel" class="tab-pane tab-pane active" id="q8">
+            <div class="row">
+                <div class="col-md-12">
+                    <pre>     
+     Question 9 code:
+            
+          
+          </pre>
+                </div>
+                <div class="col-md-12">
+                    <!-- button -->
+                    <button id="q9-button" class="btn btn-default" type="button">Question Nine Solution</button>
+                </div>
+                <div class="col-md-12">
+                    <!-- result -->
+                    <div id="q9-result"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            $(document).ready(function () {
+            
+                function swapArray(valueA, valueB, valueC, valueD){
+                    
+        var valueA = prompt("Enter your first character or number to be in your array?");
+                
+        var valueB = prompt("Enter your second character or number to be in your array?");
+                    
+        var valueC = prompt("Enter your third character or number to be in your array?");
+                   
+        var valueD = prompt("Enter your fourth character or number to be in your array?");
+        
+        var valueE = prompt("Enter your fifth character or number to be in your array?");
+                 
+                    
+                   var arr = [valueA, valueB, valueC, valueD, valueE];
+                    //orignal unaltered array
+                    
+                    
+                
+                //iarr  is used in question 8 as 'inverse array' so sarr is used for 'swapped array'
+                
+                    var sarr = [valueA, valueB, valueC, valueD, valueE]; 
+                    //swapped array variable
+                    
+                    //calling on iarr values [0, 1, 2, 3, 4]
+                    
+                    var temp; //variable to store a given value
+                    temp = sarr[0]; // store valueA in temp variable
+                    sarr[0] = sarr[4]; // valueA takes the value of valueE
+                    sarr[4] = temp;  //valueE takes the value of temp, which is the stored value of valueA
+                    //valueA and valueE have been swapped
+                    
+                     temp = sarr[1]; //valueB is stored in temp variable
+                    sarr[1] = sarr[3]; //valueB takes the value of valueD
+                sarr[3] = temp; //valueD takes the new value of temp, which is the stored value of valueB
+                    //valueB and valueD have been swapped
+                    
+                    //valueC is uneffected because it is the middle value in the array
+                    
+               $("#q9-result").html("Original array: " + arr + "<br>" + "Swapped array: " + sarr);
+                   
+                  
+                        
+                
+          }
+                //ends reverseArray function
+                
+
+                $("#q9-button").on("click", function () {
+                     swapArray();
+                    
+                
+                //ends click function 
+                });
+
+
+                //ends document ready function
+            });
+        </script>
+
+    </div>
+</body>
+
+
+</html>
