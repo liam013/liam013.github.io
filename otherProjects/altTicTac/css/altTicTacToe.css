@@ -26,9 +26,6 @@
 .green {
   color: green;
 }
-.red{
-color: red;
-}
 .allBorders {
   border: 1px black solid;
 }
@@ -41,4 +38,33 @@ color: red;
 .borderLeftAndRight {
   border-left: 1px black solid;
   border-right: 1px black solid;
+}
+
+/*Added classes */
+p{
+font-size: 24px;
+}
+.header{
+width: 100%;
+}
+.banner {
+display: inline;
+margin-right: 225px;
+}
+.banner-right{
+display: inline;
+}
+.blue {
+background-color: blue;
+}
+.red{
+background-color: red;
+}
+
+.green-bg{
+background-color: green;
+}
+
+.win-chart{
+display: inline;
 }

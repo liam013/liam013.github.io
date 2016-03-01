@@ -29,7 +29,7 @@ $(document).ready(function() {
       [4, 5] //if the user enters in three of the same values across the middle row, they win
     ],
     4: [ //(winning combinations starting at the center square)
-      [1, 8], //BUG IN THE CODE, this should not be a winning combination
+      [0, 8],
       [2, 6], //if the user enters in three of the same values  diagonally from the top right to bottom                       left, they win
       [1, 7], //if the user enters in three of the same values down the middle column, they win
       [3, 5] // if the user enters in three of the same values across the middle row, they win
@@ -64,8 +64,10 @@ $(document).ready(function() {
 
       if (circleOrEx === "o") { // when circle plays
         circleOrEx = "x"; // next it's X's turn
+          alert("Now it's X's turn");
       } else {
         circleOrEx = "o"; // X just played their turn, now it is circle's turn
+          alert("Now it's O's turn");
       }
     }
 
@@ -94,7 +96,7 @@ $(document).ready(function() {
   })
 
   //checks if a player won. chosenSquare is the final value in a winning combination; the possible values for chosenSquare is [0] - [8] what are the possible values of the paramaters
-  function checkIfWon(chosenSquare) {
+  function checkIfWon(chosenSquare, winningPlayer) {
 
     var mulitArr = winningCombos[chosenSquare];
     var playerWon;
@@ -108,17 +110,31 @@ $(document).ready(function() {
       }
 
       if (playerWon) { //remaining lines affect the board when a player enters a winning combination
+          if (winningPlayer == 'x') {
+            // Grab the current win count
+            var xWinCount = $('#xWinCount').val();
 
+            // Increment the count
+            xWinCount++;
+
+            // Assign the new count
+            $('#xWinCount').val(xWinCount);
+            }   
+    
         for (var j = 0; j < mulitArr[i].length; j++) {
           $("#board").find("div").eq(mulitArr[i][j]).find("." + circleOrEx).addClass("green"); //makes the first two inputs of the winning comination the color green
         }
         $("#board").find("div").eq(chosenSquare).find("." + circleOrEx).addClass("green"); //makes the last         input of the winning combination (chosenSquare) the color green
         alert("Winner is " + circleOrEx.toUpperCase() + "!"); //alert "Winner is X" or "Winner is O"
+       
         isGameInProgress = false; //since a player has won, the game is not longer in progress
         return false; //this exits the loop
+      
+     
+      }
       }
     }
 
 
-  }
+  
 })
