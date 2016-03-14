@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LM: Take An Order Bootstrap</title>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <!-- link to custom favicon -->
+    <link rel="icon" href="../../images/favicon.ico"/>
+    
+    <link rel="stylesheet" href="css/takeAnOrder.css">
+</head>
+<body>
+<div id="wrapper">
+    <div class="row">
+            <div class="col-sm-12 banner">
+ <h1 class="header">Buy the best headphones in the world!<span class="subHeading"> (in my opinion)</span></h1>
+       
+ 
+                </div>
+        
+        <!-- ends row div -->
+            </div>
+       <p class="changes">View an outline of all changes<a href="LiamMacdonald%20TakeAnOrderBootstrapChanges.rtf"> here </a></p>
+    	
+        <hr>
+    <div class="row right">
+     
+     <h2 class="titleFont">Customer Reviews:</h2>  
+           <div class="media review-box">
+                        <div class="media-body">
+                            <h4 class="media-heading">KT66 <a><span class="label label-primary label-as-badge">Head-fi User</span></a><br></h4>
+                            <p>&quot;Effortless hi-end sound, stunning.&quot;</p>
+                             <hr>
+                            <h4 class="media-heading">blownaway <a><span class="label label-primary label-as-badge">Head-fi User</span></a><br></h4>
+                            <p>&quot;Natural tonality, smooth extended highs, fast, dynamic, ripe extended bass. Reference soundstage with pinpoint imaging depth &amp; width. Comfortable too!&quot;</p>
+                            <hr>
+                               <h4 class="media-heading">Stereocilia <a><span class="label label-primary label-as-badge">Head-fi User</span></a><br></h4>
+                            <p>&quot;The Grado GS1000e's are a sonic revelation.&quot;</p>
+                        </div>
+                        
+                        <!-- customer review div ends -->
+                    </div>
+            <div class="col-sm-6">
+                <img class="gradoBootstrap" src="images/grado-gs1000.jpg"/>
+    <p class="caption">Base Price: $1,300 CAD</p>
+            </div>
+        </div>
+     
+        <div class="row left rightBorder">
+            <div class="col-sm-6">
+                    <div id="placeAnOrderBootStrap">
+        <h2 class="titleFont">Order Forum:</h2>
+
+                        
+<input id="mySingleLineText" class="form-control" type="text" placeholder="enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your name'"><span class="hide-name">*</span><br><br>
+    
+
+<textarea id="myTextArea" class="form-control" rows="10" cols="50" placeholder="enter your delivery address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your delivery address'"></textarea><span class="hide-address">*</span><br><br> 
+    <h2>Quantity:</h2>
+                    
+<select class="form-control" id="mySelect">
+  <option value="1" selected> 1 </option> 
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">+ 10</option>
+  
+</select><br>
+    
+    <div id="mySelectMessage"></div>
+    <br>
+    <br>
+        <h2>Connector:</h2>
+                <div class="radio">
+        <img src="images/large-plug.jpg">
+<input type="radio" name="gender" value="1/4 inch" checked> 1/4 inch (free)<br><br>
+        <img class="img-mini" src="images/mini-plug.png">
+<input type="radio" name="gender" value="1/8 inch"> 1/8 inch (free)<br><br>
+        <img class="img-xlr" src="images/xlr-plug.jpg">
+<input type="radio" name="gender" value="XLR"> XLR (for the crazy people)(+$25)<br><br>
+                <!-- ends radio div -->
+                        </div>
+                        
+        <h2>Accessories:</h2>
+        <p>Replacement Pads:</p>
+              
+        <img class="img-g" src="images/g-cushion.jpg">
+<input type="checkbox" name="vehicle" value="G-cushion" checked> G-cushion (free)<br><br>
+        <img class="img-L" src="images/L-cushion.jpg">
+<input type="checkbox" name="vehicle" value="L-cushion"> L-cushion (+$20)<br><br>
+        <img class="img-s" src="images/s-cushion.jpg">
+<input type="checkbox" name="vehicle" value="S-cushion"> S-cushion (+$20)<br><br>
+        <p>Cables:</p>
+                    
+        <img class="img-extension" src="images/extension-image.jpg">
+<input type="checkbox" name="vehicle" value="ExtensionCable"> Extension Cable (+$25)<br><br>
+        <img class="img-adaptor" src="images/adaptor-image.jpg">
+<input type="checkbox" name="vehicle" value="Adaptor"> 1/4 inch to 1/8 inch adaptor (+$25)<br><br>
+              
+                        
+<button id="chainButton" type="button" class="btn btn-default">Click to Chain order</button><br><br>    
+
+   
+<button id="myButton" type="button" class="btn btn-default">Click to place order</button><br><br> 
+
+                        
+   <!--ends placeAnOrder div-->
+                </div>
+                <!-- col-sm-5 ends -->
+                 </div>
+            <!--row div ends -->
+            </div>
+       
+       
+            <div class="col-sm-6 right dotBorder">
+                <div id="log"><p class="recieptBootstrap">Reciept:</p></div> 
+            </div>
+        
+        
+
+    
+    <!-- ends wrapper div -->
+</div>
+<script src="js/takeAnOrder.js"></script>
+</body>
+</html>
