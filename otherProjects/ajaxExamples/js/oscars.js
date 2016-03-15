@@ -23,7 +23,7 @@ var html = "<table class='table table-hover table-striped'>" +
     
 $("#compare").on("click", function(){
     var choice = ($('.agree:checked').length / 16) * 100;
-    alert("You agree with " + $('.agree:checked').length + " of the choices" + " which is "+ choice+ "%" );
+    alert("You agree with " + $('.agree:checked').length + " of the choices," + " which is "+ choice+ "%" );
 });
     
 //JSON ends
