@@ -7,7 +7,7 @@ $.get("http://liam013.github.io/partials/nav.html", function(data){
         
    // $("body").prepend(data);
     //.container.fadeIn();
-        $(".container").fadeIn(300);
+        $(".container").fadeIn(800);
     })
 
 })
