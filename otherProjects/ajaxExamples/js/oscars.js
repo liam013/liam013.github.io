@@ -13,7 +13,7 @@ var html = "<table class='table table-hover table-striped'>" +
     "<td>" + item.year + "</td>"+
     "<td>" + item.title + "</td>" + 
     "<td>" + item.director + "</td>" +
-    "<td>" + "yes " + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + "</td>" +
+    "<td>" + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + " yes" + "</td>" +
     "</tr>";
         
     })
