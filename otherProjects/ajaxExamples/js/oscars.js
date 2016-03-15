@@ -22,10 +22,7 @@ var html = "<table class='table table-hover table-striped'>" +
     $("#data").append(html);
     
 $("#compare").on("click", function(){
-$('input[type="checkbox"]').click(function(){
     alert($('.agree:checked').length);
-
-});
 });
     
 //JSON ends
