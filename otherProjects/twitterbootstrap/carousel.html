@@ -13,17 +13,18 @@
     <link rel="icon" href="../../images/favicon.ico" />
     <style>
         body {
-            width: 1200px;
+             width: 100%; 
             background-image: url(../../images/carousel-bg.jpg);
-            background-repeat: no-repeatdisplay: compact;
-            background-size: 1200px 900px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+           /* background-size: 1200px 900px;  */
             color: white;
         }
         
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
             width: 70%;
-            margin: auto;
+            margin: 0 auto;
         }
         
         .title {
@@ -42,7 +43,7 @@
     <div class="container">
          <h1 class="title">Liam Macdonald&#39;s 11 Favourite Movies...Ever... of All Time</h1>
         <br>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 900px; margin: 0 auto">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -167,5 +168,5 @@
 
 </body>
  <script src="http://liam013.github.io/js/getNav.js"></script>
- <script src="http://liam013.github.io/js/getFooter.js"></script>
+ <!-- <script src="http://liam013.github.io/js/getFooter.js"></script> -->
 </html>
