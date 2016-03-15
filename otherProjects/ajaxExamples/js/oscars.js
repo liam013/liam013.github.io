@@ -22,8 +22,8 @@ var html = "<table class='table table-hover table-striped'>" +
     $("#data").append(html);
     
 $("#compare").on("click", function(){
-    var choice = ('.agree:checked'.length / 15);
-    alert("You agree with " + $('.agree:checked').length+ "of the choices");
+    var choice = ($('.agree:checked').length / 15);
+    alert("You agree with " + $('.agree:checked').length+ " of the choices"+ "which is "+ choice+ "%" );
 });
     
 //JSON ends
