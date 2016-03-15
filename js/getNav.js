@@ -8,7 +8,7 @@ $.get("http://liam013.github.io/partials/nav.html", function(data){
     
   $.get("http://liam013.github.io/partials/footer.html", function(data){  
 document.getElementsByClassName(".row footer"); 
-         $(".container").append(".row footer");
+         $(".container").append.getElementsByClassName(".row footer");
     })
 
     })
