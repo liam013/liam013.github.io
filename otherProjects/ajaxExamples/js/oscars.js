@@ -13,13 +13,20 @@ var html = "<table class='table table-hover table-striped'>" +
     "<td>" + item.year + "</td>"+
     "<td>" + item.title + "</td>" + 
     "<td>" + item.director + "</td>" +
-    "<td>" + "yes " + "<input id='agree' name='numberOfBlanks' type='checkbox' value='' />" + "</td>" +
+    "<td>" + "yes " + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + "</td>" +
     "</tr>";
         
     })
     
     html += "</table>";
     $("#data").append(html);
+    
+$("#compare").on("click", function(){
+$('input[type="checkbox"]').click(function(){
+    alert($('.agree:checked').length);
+
+});
+}
     
 //JSON ends
 })
