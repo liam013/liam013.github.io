@@ -4,12 +4,12 @@ $.get("http://liam013.github.io/partials/nav.html", function(data){
       
     $(".container").hide();
     $(".container").prepend(data);
-    $(".container").fadeIn(800);
-    
-  $.get("http://liam013.github.io/partials/footer.html", function(data){  
+    $(".container").fadeIn(800); 
 
-         $(".container").append.getElementsByClassName(".row footer");
-    })
+    $(".container").append.getElementsByClassName(".row footer");
 
     })
+
+
 })
+
