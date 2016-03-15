@@ -6,14 +6,14 @@ var url = "http://liam013.github.io/otherProjects/ajaxExamples/jsonDatabase/osca
 
 $.getJSON(url, function(data){
 var html = "<table class='table table-hover table-striped'>" +
-    "<tr><th>Year</th><th>Title</th><th>Director</th></tr>";
+    "<tr><th>Year</th><th>Title</th><th>Director</th><th>Do you agree?</th></tr>";
     $.each(data, function(index, item){
     //$("#data").append(item.name);
     html += "<tr>"+
     "<td>" + item.year + "</td>"+
     "<td>" + item.title + "</td>" + 
     "<td>" + item.director + "</td>" +
-    "<td>" + "<input id='agree' name='numberOfBlanks' type='checkbox' value='' />" + "</td>" +
+    "<td>" + "yes" + "<input id='agree' name='numberOfBlanks' type='checkbox' value='' />" + "</td>" +
     "</tr>";
         
     })
