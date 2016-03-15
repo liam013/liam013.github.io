@@ -2,7 +2,7 @@ $(document).ready(function(){
     
 $("#getOscars").on("click", function(){
 
-var url = "liam013.github.io/otherProjects/ajaxExamples/jsonDatabase/oscars.json"
+var url = "http://liam013.github.io/otherProjects/ajaxExamples/jsonDatabase/oscars.json"
 
 $.getJSON(url, function(data){
 var html = "<table class='table table-hover table-striped'>" +
