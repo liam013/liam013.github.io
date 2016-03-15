@@ -26,7 +26,7 @@ $('input[type="checkbox"]').click(function(){
     alert($('.agree:checked').length);
 
 });
-}
+});
     
 //JSON ends
 })
