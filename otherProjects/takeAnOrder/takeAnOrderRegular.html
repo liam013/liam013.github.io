@@ -14,18 +14,20 @@
 <body>
     <div id="wrapper">
         <header class="banner">
-            <!--span tag will be used as a subheading saying 'in my opinion' -->
+            <!-- header with image as background -->
             <h1 class="header">Buy the best headphones in the world!<span class="subHeading"> (in my opinion)</span></h1>
-            <!-- <h1 class="sub">(In my opinion)</h1> -->
+            
         </header>
         <div id="placeAnOrder">
             <h2>Order Forum</h2>
-            <!-- <input id="mySingleLineText" type="text" value="Type here"><br><br>  -->
+            <!-- placeholder text is used so when the user clicks on the text field the pre-existing text disappears -->
+            <!--hide-name class shows an * when the user forgets to enter in text (this will display after the alert) and helps the user find which field they forgot to fill out -->
             <input id="mySingleLineText" type="text" placeholder="enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your name'"><span class="hide-name">*</span>
             <br>
             <br>
 
-            <!-- <textarea id="myTextArea" rows="10" cols="50">Write something here</textarea><br><br> -->
+            <!-- placeholder text is used so when the user clicks on the text field the pre-existing text disappears -->
+            <!--hide-address class shows an * when the user forgets to enter in text (this will display after the alert) and helps the user find which field they forgot to fill out -->
             <textarea id="myTextArea" rows="10" cols="50" placeholder="enter your delivery address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your delivery address'"></textarea><span class="hide-address">*</span>
             <br>
             <br>
@@ -86,7 +88,7 @@
             <input type="checkbox" name="vehicle" value="Adaptor">1/4 inch to 1/8 inch adaptor (+$25)
             <br>
             <br>
-
+            <!--chainButton is to be used when the user enters in the value + 10, the alert will guide the user through the process of place 2 different orders instead of one large order -->
             <button id="chainButton" type="button">Click to Chain order</button>
             <br>
             <br>

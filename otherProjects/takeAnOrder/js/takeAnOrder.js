@@ -81,14 +81,11 @@ $(document).ready(function () {
             price = price + 20;
         }
 
-        // if ($([name='G-cushion']:checked && [name='L-cushion']:checked)){
-        //   price += 25
-        // }
+       
 
 
         //adding the value of the variables to the LOG section of the page
-        //$("#log").append("<br>button has been clicked");
-        // $("#log").append("Most Recent Reciept is: ");
+    
         $("#log").append("<br><br>Price: $" + price);
         $("#log").append("<br>Name: " + myInput);
         $("#log").append("<br>Delivery Address: " + myTextarea);
@@ -111,7 +108,6 @@ $(document).ready(function () {
         if (myInput === "") {
             alert("You forget to enter your name");
 
-            //$("#mySingleLineText").css("border-color", "red");
             $("#mySingleLineText").css("background-color", "#EE6363");
             $(".hide-name").show();
         }
@@ -120,7 +116,6 @@ $(document).ready(function () {
         if (myTextarea === "") {
             alert("You forgot to enter a delivery address");
 
-            //$("#myTextArea").css("border-color", "red");
             $("#myTextArea").css("background-color", "#EE6363");
             $(".hide-address").show();
         }
@@ -164,6 +159,7 @@ $(document).ready(function () {
             $(this).text("You're Done!");
             $(this).css("background-color", "#61B329");
         })
+    //changes button color to white when mouseleaves
         .on("mouseleave", function () {
             $(this).text("Click to Place Order");
             $(this).css("background-color", "white");
