@@ -1,5 +1,5 @@
 
-$(docuement).ready(function(){
+$(document).ready(function(){
     
 $("#getClients").on("click", function(){
 
