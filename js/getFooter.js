@@ -1,9 +1,9 @@
 
 $.get("http://liam013.github.io/partials/nav.html", function(data){
-    $(".row footer").show();
+    $("footer").show();
     $(document).ready(function(){
     
-    $(".container").append.getElementsByClassName(".row footer");
+    $(".container").append.getElementsByClassName("footer");
     
     })
 
