@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     
 $("#getClients").on("click", function(){
@@ -6,12 +5,20 @@ $("#getClients").on("click", function(){
 var url = "http://liam013.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json"
 
 $.getJSON(url, function(data){
-
+var html = "<table>"+
+    "<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
     $.each(data, function(index, item){
-    $("#data").append(item.name);
+    //$("#data").append(item.name);
+    html+ = "<tr>" +
+    "<td>" + item.name + "</td>"+
+    "<td>" + item.email + "</td>" + 
+    "<td>" + item.company + "</td>" +
+    "</tr>";
+        
     })
-    //alert(data);
-    //console.dir(data);
+    
+    html += "</table>";
+    $("#data").append(html);
     
 //JSON ends
 })
