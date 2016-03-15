@@ -10,9 +10,9 @@ var html = "<table class='table table-hover table-striped'>" +
     $.each(data, function(index, item){
     //$("#data").append(item.name);
     html += "<tr>"+
-    "<td>" + item.name + "</td>"+
-    "<td>" + item.email + "</td>" + 
-    "<td>" + item.company + "</td>" +
+    "<td>" + item.year + "</td>"+
+    "<td>" + item.title + "</td>" + 
+    "<td>" + item.director + "</td>" +
     "</tr>";
         
     })
