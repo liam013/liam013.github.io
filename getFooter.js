@@ -1,7 +1,7 @@
-$.get("http://liam013.github.io/partials/footer.html", function(data){
+$.get("http://liam013.github.io/partials/footer.html", function(foot){
 
     $(document).ready(function(){
-       $(".container").append(data);
+       $(".container").append(foot);
     })
 
 })
