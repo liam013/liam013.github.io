@@ -3,7 +3,7 @@ $(document).ready(function(){
     
 $("#getClients").on("click", function(){
 
-var url = "http://liam013.github.io/otherProjects/ajaxEamples/clients.json"
+var url = "http://liam013.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json"
 
 $.getJSON(url, function(data){
 
