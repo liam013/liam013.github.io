@@ -6,6 +6,7 @@ $.get("http://liam013.github.io/partials/nav.html", function(data){
     $(".container").prepend(data);
     $(".container").fadeIn(800); 
 
+    $(".row footer").hide();
     })
 
 
