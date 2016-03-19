@@ -5,19 +5,20 @@ $("#getOscars").on("click", function(){
 var url = "http://liam013.github.io/otherProjects/ajaxExamples/jsonDatabase/oscars.json"
 
 $.getJSON(url, function(data){
-var html = "<ul class='list-group'>";
+var html = "<table class='table table-hover table-striped'>" +
+    "<tr><th>Year</th><th>Title</th><th>Director</th><th>Do you agree?</th></tr>";
     $.each(data, function(index, item){
     //$("#data").append(item.name);
-    html += 
-    "<li class='list-group-item'>" + 'Year: ' +  item.year + "</td>"+
-    "<li class='list-group-item'>" + 'Title: ' +  item.title + "</td>" + 
-    "<li class='list-group-item'>" + 'Director: ' +  item.director + "</td>" +
-    "<li class='list-group-item'>" + 'Yes, I agree with this choice ' + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + "</li>" +
-    "<br><br>";
+    html += "<tr>"+
+    "<td>" + item.year + "</td>"+
+    "<td>" + item.title + "</td>" + 
+    "<td>" + item.director + "</td>" +
+    "<td>" + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + " yes" + "</td>" +
+    "</tr>";
         
     })
     
-    html += "</ul>";
+    html += "</table>";
     $("#data").append(html);
     
 $("#compare").on("click", function(){
