@@ -16,8 +16,10 @@ $.getJSON("jsonDatabase/classExample.json",function(data){
          html+= '<div class="renterName">' + 'Username: ' + i.username + '</div>' +
         '<div class="renterComment">' + 'Comment: ' + i.comment + '</div>'+ 
         '<div class="renterStars">';
+             
+            var numStars= Number(i.stars);
              for (var i=1; i<=5; i++){
-             if (i <= i.stars){
+             if (i <= numStars){
              html+='<img src="images/star.png"/>';
              }
                  else{
