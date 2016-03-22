@@ -1,10 +1,10 @@
 [
  {
- "type": "Calico",   
- "name": "Paws",
- "gender": "Male",
+ "title": "Calico",   
+ "year": "Paws",
+ "director": "Male",
  "image": "images/cat-1.jpg",
- "comment": [
+ "comments": [
      {
     "username": "valuesbob",
     "stars": 5,
@@ -22,11 +22,11 @@
      }]
  },
  {
- "type": "Tabby",  
- "name": "Mittens",
- "gender": "Female",
+ "title": "Tabby",  
+ "year": "Mittens",
+ "director": "Female",
  "image": "images/cat-2.jpg",
- "comment": [
+ "comments": [
      {
     "username": "earedbob",
     "stars": 3,
@@ -44,11 +44,11 @@
      }]
  },
  {
- "type": "Siamese", 
- "name": "Rob",
- "gender": "Male",
+ "title": "Siamese", 
+ "year": "Rob",
+ "director": "Male",
  "image": "images/cat-3.jpg",
- "comment": [
+ "comments": [
      {
     "username": "bobinfused",
     "stars": 4,

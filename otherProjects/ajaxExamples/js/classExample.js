@@ -5,13 +5,30 @@ $.getJSON("jsonDatabase/classExample.json",function(data){
     
     var html = "";
     $.each(data, function(index, item){
-     html += '<div class="col-md-4 cat">'+
-             '<div class="catName">' + item.name + '</div>'+
-             '<div class="catType">' + item.type + '</div>'+
-             '<div class="catGender">' + item.gender + '</div>'+
-             '<img src="' + item.image + '"/>';
-        
-     html += '</div>';
+     html += '<div class="col-md-3">'+
+             '<img class="catImage" src="' + item.image + '"/>' +
+             '<div class="catName">' + 'Year: ' + item.year + '</div>'+
+             '<div class="catType">' + 'Title: ' + item.title + '</div>'+
+             '<div class="catGender">' + 'Director: ' + item.director + '</div>'+
+             '<div class="commentContainer">';
+        //ind = index; i=item
+         $.each(item.comments, function(ind, i){
+         html+= '<div class="renterName">' + 'Username: ' + i.username + '</div>' +
+        '<div class="renterComment">' + 'Comment: ' + i.comment + '</div>'+ 
+        '<div class="renterStars">';
+             for (var i=1; i<=5; i++){
+             if (i <= i.stars){
+             html+='<img src="images/star.png"/>';
+             }
+                 else{
+                 html+='<img src="emptyStar.png"/>';
+                 }
+             }
+             html+='</div>'; //end renterStars
+         }) //each comment 
+         
+     html += '</div>'+ //commentContainer 
+              '</div>'; //col-md-4
         
         
     })//each cat
