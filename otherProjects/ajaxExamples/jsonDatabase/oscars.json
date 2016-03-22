@@ -1,98 +1,242 @@
 [
-  {
-    "year": 2015,
-    "image": "",
+ {
+ "year": 2015,
+    "image": "images/spotlight.jpg",
     "title": "Spotlight",
-    "director": "Tom McCarthy"
-  },
-  {
-    "year": 2014,
-    "image": "",
-    "title": "Birdman or (The Unexpected Virtue of Ignorance)",
-    "director": "Alejandro González Iñárritu"
-  },
-  {
-    "year": 2013,
-    "image": "",
+    "director": "Tom McCarthy",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8   
+     }]
+ },
+ {
+   "year": 2014,
+    "image": "images/birdman.jpg",
+    "title": "Birdman",
+    "director": "Alejandro González Iñárritu",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 7
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8   
+     }]
+ },
+ {
+ "year": 2013,
+    "image": "images/12years.jpeg",
     "title": "12 Years of Slave",
-    "director": "Steve McQueen"
-  },
-  {
-    "year": 2012,
-    "image": "",
+    "director": "Steve McQueen",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 9   
+     }]
+},
+ {
+ "year": 2012,
+    "image": "images/argo.jpg",
     "title": "Argo",
-    "director": "Ben Affleck"
-  },
-  {
-    "year": 2011,
-    "image": "",
+    "director": "Ben Affleck",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 7
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8 
+     }]
+     },
+ {
+  "year": 2011,
+    "image": "images/theartist.jpg",
     "title": "The Artist",
-    "director": "Michel Hazanavicius"
-  },
-  {
-    "year": 2010,
-    "image": "",
+    "director": "Michel Hazanavicius",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8   
+     }]
+     },
+ {
+ "year": 2010,
+    "image": "images/kings.jpg",
     "title": "The King's Speech",
-    "director": "Tom Hooper"
-  },
-  {
-    "year": 2009,
-    "image": "",
+    "director": "Tom Hooper",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8 
+     }]
+     },
+ {
+  "year": 2009,
+    "image": "images/hurtlocker.jpg",
     "title": "The Hurt Locker",
-    "director": "Kathryn Bigelow"
-  },
-  {
-    "year": 2008,
-    "image": "",
+    "director": "Kathryn Bigelow",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 7
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8
+     }]
+     },
+ {
+  "year": 2008,
+    "image": "images/slumdog.jpg",
     "title": "Slumdog Millionare",
-    "director": "Danny Boyle"
-  },
-  {
-    "year": 2007,
-    "image": "",
+    "director": "Danny Boyle",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8
+     }]
+     },
+ {
+ "year": 2007,
+    "image": "images/nocountry.jpg",
     "title": "No Country for Old Men",
-    "director": "Joel and Ethan Coen"
-  },
-  {
-    "year": 2006,
-    "image": "",
+    "director": "Joel and Ethan Coen",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8  
+     }]
+     },
+ {
+  "year": 2006,
+    "image": "images/departed.jpg",
     "title": "The Departed",
-    "director": "Martin Scorsese"
-  },
-  {
-    "year": 2005,
-    "image": "",
+    "director": "Martin Scorsese",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8   
+     }]
+     },
+ {
+"year": 2005,
+    "image": "images/crash.jpg",
     "title": "Crash",
-    "director": "Paul Haggis"
-  },
-  {
-    "year": 2004,
-    "image": "",
+    "director": "Paul Haggis",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 7
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 7 
+     }]
+     },
+ {
+   "year": 2004,
+    "image": "images/million.jpg",
     "title": "Million Dollar Baby",
-    "director": "Clint Eastwood"
-  },
-  {
-    "year": 2003,
-    "image": "",
-    "title": "The Lord of the Rings: Return of the King",
-    "director": "Peter Jackson"
-  },
-  {
-    "year": 2002,
-    "image": "",
+    "director": "Clint Eastwood",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8  
+     }]
+     },
+ {
+ "year": 2003,
+    "image": "images/lotr.jpg",
+    "title": "LOTR: Return of the King",
+    "director": "Peter Jackson",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8  
+     }]
+     },
+ {
+ "year": 2002,
+    "image": "images/chicago.jpg",
     "title": "Chicago",
-    "director": "Rob Marshall"
-  },
-  {
-    "year": 2001,
-    "image": "",
+    "director": "Rob Marshall",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 7
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 8  
+     }]
+     },
+ {
+  "year": 2001,
+    "image": "images/beautifulMind.jpg",
     "title": "A Beautiful Mind",
-    "director": "Ron Howard"
-  },
-  {
-    "year": 2000,
-    "image": "",
+    "director": "Ron Howard",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 7
+     }]
+     },
+ {
+  "year": 2000,
+    "image": "images/gladiator.jpg",
     "title": "Gladiator",
-    "director": "Ridley Scott"
-  }
-]
+    "director": "Ridley Scott",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 8
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 7  
+     }]
+     
+ }]

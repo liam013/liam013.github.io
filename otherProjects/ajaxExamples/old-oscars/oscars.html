@@ -8,46 +8,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style>
-        .movieImage{
-        width: 100%;
-        } 
-        /*
-        .movieImage:hover {
-	   background-position: 0 0;
-        opacity: 0.4;
-
-        } */
-        .jtron-bg{
-           background-color: #d9edf7;
-            margin-top: 20px;
+        .title{
+        margin: 0 auto;
         }
-
     </style>
- 
+    
     <!-- link to custom favicon -->
     <link rel="icon" href="http://liam013.github.io/images/favicon.ico"/>
 </head>
 <body>
 <div class="container">
-    
-    <div class="jumbotron jtron-bg hidden-xs">
-            <h1>Oscars Best Picture Winners of the 2000's</h1>
-            <p>How many do you agree with?</p>
-            <!-- Jumbotron ends -->
-        </div>
-
-    <div id="movieData" class="row">
-          </div>
-    <br><br>
-<button id="compare" class="btn btn-success" type="button">Compare Results</button>
-    
-<br><br>
-           
+    <h1 class="title">Best Picture Oscar Winners of the 2000's: How Many do you Agree with?</h1>
+    <div class="row">
         
-    
-     
-      
-    
+        <div class="col-md-12">
+        
+            <button id="getOscars" class="btn btn-warning" type="button">Get List of  Oscar Winners</button>
+            <br>
+            <br>
+            
+        </div>
+        
+            <div id="data">
+        
+            </div>
+        
+        <div class="col-md-12">
+        
+            <button id="compare" class="btn btn-success" type="button">Compare Results</button>
+            <br>
+            <br>
+    <!--target this alery div to insert alerts with different BG colours based on percetage of agreement with Oscar winners -->
+           <div class="result">
+            </div>
+        </div>
+    <!-- row div ends -->
+    </div>
 <!-- container div ends -->
 </div>
 <script src="js/oscars.js"></script>
