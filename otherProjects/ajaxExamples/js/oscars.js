@@ -5,7 +5,7 @@ $("#getOscars").on("click", function(){
 var url = "http://liam013.github.io/otherProjects/ajaxExamples/jsonDatabase/oscars.json"
 
 $.getJSON(url, function(data){
-var html = "<ul class='list-group'>";
+var html = '<div class="col-md-4 cat">' + "<ul class='list-group'>";
     $.each(data, function(index, item){
     //$("#data").append(item.name);
     html += 
@@ -17,8 +17,16 @@ var html = "<ul class='list-group'>";
         
     })
     
-    html += "</ul>";
+    html += "</ul>" + '</div>';
     $("#data").append(html);
+    
+    // html += '<div class="col-md-4 cat">'+
+         //    '<div class="catName">' + item.name + '</div>'+
+         //    '<div class="catType">' + item.type + '</div>'+
+           //  '<div class="catGender">' + item.gender + '</div>'+
+             //'<img src="' + item.image + '"/>';
+        
+    // html += '</div>';
     
 $("#compare").on("click", function(){
     var choice = ($('.agree:checked').length / 16) * 100;

@@ -1,0 +1,67 @@
+[
+ {
+ "type": "Calico",   
+ "name": "Paws",
+ "gender": "Male",
+ "image": "images/cat-1.jpg",
+ "comment": [
+     {
+    "username": "valuesbob",
+    "stars": 5,
+    "comment": "good"     
+     },
+     {
+     "username": "bobvalhrona",
+    "stars": 5,
+    "comment": "5/7"     
+     },
+     {
+    "username": "linebob",
+    "stars": 5,
+    "comment": "holy cow omg"     
+     }]
+ },
+ {
+ "type": "Tabby",  
+ "name": "Mittens",
+ "gender": "Female",
+ "image": "images/cat-2.jpg",
+ "comment": [
+     {
+    "username": "earedbob",
+    "stars": 3,
+    "comment": "....meh..."     
+     },
+     {
+     "username": "naturalbob",
+    "stars": 3,
+    "comment": "good, I guess"     
+     },
+     {
+    "username": "scaredbob",
+    "stars": 3,
+    "comment": "average at best"     
+     }]
+ },
+ {
+ "type": "Siamese", 
+ "name": "Rob",
+ "gender": "Male",
+ "image": "images/cat-3.jpg",
+ "comment": [
+     {
+    "username": "bobinfused",
+    "stars": 4,
+    "comment": "good, but not a dog"     
+     },
+     {
+     "username": "bobfryer",
+    "stars": 4,
+    "comment": "I wish it was a fish"     
+     },
+     {
+    "username": "partnersbob",
+    "stars": 4,
+    "comment": "Amazing, omg can I keep it"     
+     }]
+ }]
