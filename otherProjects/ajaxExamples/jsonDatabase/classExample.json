@@ -1,67 +1,242 @@
 [
  {
- "title": "Calico",   
- "year": "Paws",
- "director": "Male",
- "image": "images/cat-1.jpg",
+ "year": 2015,
+    "image": "",
+    "title": "Spotlight",
+    "director": "Tom McCarthy",
  "comments": [
      {
-    "username": "valuesbob",
-    "stars": 5,
-    "comment": "good"     
+    "username": "IMDB Rating: ",
+    "stars": 8
      },
      {
-     "username": "bobvalhrona",
-    "stars": 5,
-    "comment": "5/7"     
-     },
-     {
-    "username": "linebob",
-    "stars": 5,
-    "comment": "holy cow omg"     
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 5   
      }]
  },
  {
- "title": "Tabby",  
- "year": "Mittens",
- "director": "Female",
- "image": "images/cat-2.jpg",
+   "year": 2014,
+    "image": "",
+    "title": "Birdman",
+    "director": "Alejandro González Iñárritu",
  "comments": [
      {
-    "username": "earedbob",
-    "stars": 3,
-    "comment": "....meh..."     
+    "username": "IMDB Rating: ",
+    "stars": 10
      },
      {
-     "username": "naturalbob",
-    "stars": 3,
-    "comment": "good, I guess"     
-     },
-     {
-    "username": "scaredbob",
-    "stars": 3,
-    "comment": "average at best"     
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 10   
      }]
  },
  {
- "title": "Siamese", 
- "year": "Rob",
- "director": "Male",
- "image": "images/cat-3.jpg",
+ "year": 2013,
+    "image": "",
+    "title": "12 Years of Slave",
+    "director": "Steve McQueen",
  "comments": [
      {
-    "username": "bobinfused",
-    "stars": 4,
-    "comment": "good, but not a dog"     
+    "username": "IMDB Rating: ",
+    "stars": 1
      },
      {
-     "username": "bobfryer",
-    "stars": 4,
-    "comment": "I wish it was a fish"     
-     },
-     {
-    "username": "partnersbob",
-    "stars": 4,
-    "comment": "Amazing, omg can I keep it"     
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
      }]
+},
+ {
+ "year": 2012,
+    "image": "",
+    "title": "Argo",
+    "director": "Ben Affleck",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+  "year": 2011,
+    "image": "",
+    "title": "The Artist",
+    "director": "Michel Hazanavicius",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+ "year": 2010,
+    "image": "",
+    "title": "The King's Speech",
+    "director": "Tom Hooper",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+  "year": 2009,
+    "image": "",
+    "title": "The Hurt Locker",
+    "director": "Kathryn Bigelow",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+  "year": 2008,
+    "image": "",
+    "title": "Slumdog Millionare",
+    "director": "Danny Boyle",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+ "year": 2007,
+    "image": "",
+    "title": "No Country for Old Men",
+    "director": "Joel and Ethan Coen",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+  "year": 2006,
+    "image": "",
+    "title": "The Departed",
+    "director": "Martin Scorsese",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+"year": 2005,
+    "image": "",
+    "title": "Crash",
+    "director": "Paul Haggis",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+   "year": 2004,
+    "image": "",
+    "title": "Million Dollar Baby",
+    "director": "Clint Eastwood",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+ "year": 2003,
+    "image": "",
+    "title": "LOTR: Return of the King",
+    "director": "Peter Jackson",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+ "year": 2002,
+    "image": "",
+    "title": "Chicago",
+    "director": "Rob Marshall",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+  "year": 2001,
+    "image": "",
+    "title": "A Beautiful Mind",
+    "director": "Ron Howard",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     },
+ {
+  "year": 2000,
+    "image": "",
+    "title": "Gladiator",
+    "director": "Ridley Scott",
+ "comments": [
+     {
+    "username": "IMDB Rating: ",
+    "stars": 1
+     },
+     {
+    "username": "Rotten Tomatoes Rating: ",
+    "stars": 1   
+     }]
+     
  }]

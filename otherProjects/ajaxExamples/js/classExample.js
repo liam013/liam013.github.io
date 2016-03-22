@@ -13,32 +13,37 @@ $.getJSON("jsonDatabase/classExample.json",function(data){
              '<div class="commentContainer">';
         //ind = index; i=item
          $.each(item.comments, function(ind, i){
-         html+= '<div class="renterName">' + 'Username: ' + i.username + '</div>' +
-        '<div class="renterComment">' + 'Comment: ' + i.comment + '</div>'+ 
+         html+= '<div class="renterName">' + i.username + '</div>' +
         '<div class="renterStars">';
              
             var numStars= Number(i.stars);
-             for (var i=1; i<=5; i++){
+             for (var i=1; i<=10; i++){
              if (i <= numStars){
              html+='<img src="images/star.png"/>';
              }
                  else{
-                 html+='<img src="emptyStar.png"/>';
+                 html+='<img src="images/emptyStar.png"/>';
                  }
              }
              html+='</div>'; //end renterStars
          }) //each comment 
          
-     html += '</div>'+ //commentContainer 
+     html += '</div>'+ '<strong>Yes, I agree with this choice </strong> ' + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + "</li>" +  //commentContainer 
               '</div>'; //col-md-4
         
-        
+       
     })//each cat
+  
    $("#catData").append(html);
 
     
     // closes getJSON
 })
+$("#compare").on("click", function(){
+    var choice = ($('.agree:checked').length / 16) * 100;
+    alert("You agree with " + $('.agree:checked').length + " of the choices," + " which is "+ choice+ "%" );
+});
+
 //closes document.ready
 })
 /* 
