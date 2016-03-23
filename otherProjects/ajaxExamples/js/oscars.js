@@ -25,10 +25,10 @@ $.getJSON("jsonDatabase/oscars.json",function(data){
                  html+='<img src="images/emptyStar.png"/>';
                  }
              }
-             html+='</div>'; //end renterStars
-         }) //each comment 
+             html+='</div>'; //end Stars
+         })  
          
-     html += '</div>'+ '<strong>Yes, I agree with this choice </strong> ' + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + "</li>" + "<br><br>" + //commentContainer 
+     html += '</div>'+ '<strong>Yes, I agree with this choice </strong> ' + "<input id='agree' name='agree' class='agree'  type='checkbox' value='' />" + "</li>" + "<br><br>" +  
               '</div>'; //col-md-4
         
        
@@ -39,26 +39,20 @@ $.getJSON("jsonDatabase/oscars.json",function(data){
     
     // closes getJSON
 })
+//when compare button is clicked 
 $("#compare").on("click", function(){
+    //$('.agree:checked') is the number of checkboxes the user checks
+    //whereas, var choice is the percentage of agreed upon choices
     var choice = ($('.agree:checked').length / 16) * 100;
     alert("You agree with " + $('.agree:checked').length + " of the choices," + " which is "+ choice+ "%" );
 });
 
+   
 //closes document.ready
 })
-/* 
-//one per cat
+//Attempted to try and have the poster images link the a summary page or IMDB page for the movie, but was unable to achieve it
 
-    <div class="catName"></div>
-    <div class="catType"></div>
-    <div class="catGender"></div>
-    <img src=""/>
-    <div class="commentsContainer">
-    //one per comment
-    <div class="renterName"></div>
-    <div class="renterLocation"></div>
-    <div class="renterStars"></div>
-    //5 stars, some full, some empty
-    </div> 
-</div> 
-*/    
+//$("images/spotlight.jpg").onClick="location.href='www.imdb.com/title/tt1895587'"
+
+
+  
