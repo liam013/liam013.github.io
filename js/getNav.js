@@ -1,4 +1,4 @@
-$.get("../partials/nav.html", function(data){
+$.get("partials/nav.html", function(data){
 
     $(document).ready(function(){
 
