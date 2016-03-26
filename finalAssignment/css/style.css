@@ -1,0 +1,77 @@
+body{
+background-image: url("../images/splash.jpg");
+background-repeat: none;
+}
+.splashPage{
+margin-top: 50px;
+}
+.logo{
+color: white;
+text-align: center;
+vertical-align: middle;
+font-size: 72px;
+font-weight: 700;
+margin-bottom:160px;
+}
+
+.enter{
+margin: 0 auto;
+width: 40%;
+}
+
+.exit{
+margin: 0 auto;
+width: 40%;
+}
+.btn-success {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background: #45c46f !important;
+  border-color: #45c46f !important;
+}
+.btn-success.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+  background: #58ca7e;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #fff;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background: #fa3641 !important;
+  border-color: #fa3641 !important;
+}
+.btn-danger.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+  background: #fb4f59;
+  color: #fff;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid gray;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  box-shadow: none;
+}
+
+
