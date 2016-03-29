@@ -20,7 +20,11 @@ border: solid white 1px;
 color: white;
 }
 
-.thumbLable{
+.thumbContent{
+color: white;
+}
+
+.thumbLabel{
 color: white;
 }
 li{
@@ -43,6 +47,12 @@ margin: 20px;
 }
 .navbar .nav > li > a:hover {
    color: #fff;
+}
+a:visited {
+color: #fff;
+}
+a:active{
+color: #fff;
 }
 /*Splash Page styling */
 .enter{
@@ -105,5 +115,23 @@ width: 40%;
 }
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
   box-shadow: none;
+}
+.btn-info {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background: #5bc0de !important;
+  border-color: #5bc0de !important;
+}
+.btn-info.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+  background: #5bc0de;
+  color: #fff;
 }
 
