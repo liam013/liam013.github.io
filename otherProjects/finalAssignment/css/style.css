@@ -14,8 +14,15 @@ font-size: 72px;
 font-family: Arial;
 font-weight: bold;
 }
+.thumbPreview{
+background: transparent;
+border: solid white 1px;
+color: white;
+}
 
-
+.thumbLable{
+color: white;
+}
 li{
 margin-top: 10px
 }
