@@ -7,13 +7,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.io">
+    <link rel="icon" href="images/favicon-32x32.png">
  
 </head>
 <body>
-    <audio autoplay>
-  <source src="audio/song.mp3" type="audio/mpeg">
-</audio>
+  
    
   <div class="container-fluid">
        <nav class="nv navbar navbar-default">
@@ -31,6 +29,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a href="http://liam013.github.io/"><span class="glyphicon glyphicon-circle-arrow-left"></span> Back to GitHub</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-usd"></span> Pricing</a></li>
@@ -50,10 +49,39 @@
       </br></br>
     
         <div class="row">
-          <div class="bodyText col-sm-12 col-md-8">
-              <p><strong>Our Mission:</strong>  We here at Mmmm Audio are dedicated in ensuring the highest quality service for an affordable price.</p>
-
-            <p></p>
+          <div class="bodyText col-sm-12 col-md-11">
+              <p><strong>Our Mission:</strong>  We here at <i>Mmmm Audio</i> are dedicated in ensuring the highest quality service for an affordable price.</p>
+</div>
+            </div>
+    </br></br>
+            <!--progress bar BootStrap div -->
+            <div class="row">
+          <div class="bodyText col-sm-12 col-md-11">
+                  <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-success" style="width: 15%">
+                    Source (15%)
+                </div>
+                <!-- width written is smaller than the styling in order to have 'DAC (5%)' completely visible -->
+                <div class="progress-bar progress-bar-warning" style="width: 10%">
+                    DAC (5%)
+                </div>
+                <div class="progress-bar progress-bar-grey" style="width: 20%">
+                    Amp (20%)
+                </div>
+                <div class="progress-bar progress-bar-success" style="width: 40%">
+                    Headphones/Speakers (40%)
+                </div>
+                <!-- styling of width differs from what is written in order to fill the progress bar -->
+                <div class="progress-bar progress-bar-danger" style="width: 15%">
+                    Placebo (20%)
+                </div>
+            </div>
+           <p>Here's a quick break down of a typical audio chain and what your should be focusing on.  Beware of the placebo effect.  The journey to hi-fi audio can be affordable and we'll do our best to steer you clear of the snake oil that can really hurt the bank.</p>
+            
+            <hr class="style14">
+            <!--Layered Progress Bar ends -->
+     
+              
               </div>
           </div>
       </br></br>
@@ -75,7 +103,7 @@
       <img src="images/repairs.jpg" alt="image of mini construction men working on circuit">
       <div class="caption">
         <h3 class="thumbLabel">Repairs</h3>
-        <p class="thumbContent">Ruptured driver, loose wiring, and other AV components</p></br>
+        <p class="thumbContent">Ruptured driver, loose wiring, and other AV components</p>
         <p><a href="#" class="btn btn-info btn-outline" role="button">more info...</a></br></br> <a href="#" class="enter btn btn-success btn-outline" role="button">Buy Now</a></p>
       </div>
     </div>
