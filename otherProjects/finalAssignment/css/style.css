@@ -1,7 +1,6 @@
 body{
 background-image: url("../images/splash.jpg");
 background-repeat: none;
-
 }
 .splashPage{
 margin-top: 50px;
@@ -14,6 +13,13 @@ color: white;
 font-size: 72px;
 font-family: Arial;
 font-weight: bold;
+}
+.musicIcon{
+height: 45px;
+width: 45px;
+}
+.musicButton{
+margin-left: 20px;
 }
 hr.style14 { 
   border: 0; 
