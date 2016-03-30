@@ -1,10 +1,9 @@
-$.get("../partials/nav.html", function(data){
+$.get("partials/nav.html", function(data){
 
     $(document).ready(function(){
 
-    $(".container").hide();
-    $(".container").prepend(data);
-    $(".container").fadeIn(800); 
+    $(".container-fluid").prepend(data);
+    $(".container-fluid").fadeIn(800); 
 
    
     })

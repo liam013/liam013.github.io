@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title> Home | MmmmAudio </title>
+    <title> Wall of Fame | MmmmAudio </title>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -11,28 +11,30 @@
  
 </head>
 <body>
-     <audio id="myAudio">
-  <source src="audio/song.mp3" type="audio/mpeg">
-  <source src="audio/song.ogg" type="audio/ogg">
-</audio> 
+  
    
   <div class="container-fluid">
+
       
-      
-      <div class="row">
+  
           
-              <h1 class="headText">Welcome, stay awhile.</h1>
-             <hr class="style14"></hr>
-      </div>
+              <h1 class="headText">Wall of Fame</h1>
+           <hr class="style14"></hr>
+      
+            
+
+    
       </br></br>
+         
+           <h2>Albums: </h2>
+              <div id="albumData" class="row"></div>
+         
     
-        <div class="row">
-          <div class="missionText col-sm-12 col-md-11">
-              <p><strong>Our Mission:</strong>  Here at <i>Mmmm Audio</i> we are dedicated in ensuring the highest quality service for an affordable price.</p>
-</div>
-            </div>
-    </br></br>
-    
+      </br></br>
+          
+           <h2>Equipment: </h2>
+            <div id="deviceData" class="row"></div>
+
     <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbPreview thumbnail">
@@ -79,9 +81,8 @@
 
     
 
-
+</div>
 </body>
 <script src="js/getNav.js"></script>
-<script src="js/final.js"></script>
-
+<script src="js/wall.js"></script>
 </html>

@@ -53,7 +53,6 @@ padding: 10px;
 margin-bottom: 30px;
 }
 .bodyText{
-
 margin-right: 30px;
 margin-left: 30px;
 background-color:rgba(0, 0, 0, 0.4);
@@ -61,10 +60,13 @@ color: white;
 border: solid 1px white;
 padding: 10px;
 }
-
+.titleText{
+margin-left: 30px;
+color: white;
+}
 .headText{
-margin-lfet: 30px;
-border-bottom: white solid 1px;
+text-align: center;
+margin: 0 auto;
 color: white;
 }
 .thumbPreview{
