@@ -25,15 +25,15 @@ $.getJSON("jsonDatabase/wall.json",function(data){
     var device = "";
     
      $.each(data.devices, function(ind, item){
-     device += '<div class="col-md-3">'+
-             '<img class="deviceImage" src=""' + item.deviceImage + '"/>' + "<br>" +
+     device += '<div class="col-md-4">'+
+             '<img class="deviceImage" src="' + item.deviceImage + '"/>' + "<br>" +
              '<div class="deviceName">' + "<strong>Product: </strong>" + item.device + '</div>'+
              '<div class="deviceType">' + "<strong>Device: </strong>" + item.type + '</div>'+
              '<div class="deviceCompany">' + "<strong>Company: </strong>" + item.company + '</div>'+
              '<div class="devicePrice">' + "<strong>Price: </strong>" + item.price + '</div>'
          
       
-     device += '</div>'; //col-md-3
+     device += '<br>' + '</div>'; //col-md-3
         
     })//each device 
       $("#deviceData").append(device);   

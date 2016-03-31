@@ -129,78 +129,78 @@
 	"devices": [
 
 		{
-			"deviceImage": "",
+			"deviceImage": "images/devices/e12.jpg",
 			"device": "E12",
 			"type": "Portable amp",
 			"company": "FiiO",
-			"price": "$130"
+			"price": "$130 CAD"
 
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/gs1000e.jpg",
 			"device": "GS1000e",
 			"type": "Headphone",
 			"company": "Grado",
-			"price": "$1300"
+			"price": "$1,300 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/rs1i.jpg",
 			"device": "RS1i",
 			"type": "Headphone",
 			"company": "Grado",
-			"price": "$850"
+			"price": "$900 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/sr60e.jpg",
 			"device": "SR60e",
 			"type": "Headphone",
 			"company": "Grado",
-			"price": "$80"
+			"price": "$120 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/hd650.jpg",
 			"device": "HD 650",
 			"type": "Headphone",
 			"company": "Sennheiser",
-			"price": "$500"
+			"price": "$550 CAD"
 		}, {
-			"deviceImage": "",
-			"device": "SRH 860",
+			"deviceImage": "images/devices/samson.jpg",
+			"device": "SR 850",
 			"type": "Headphones",
 			"company": "Samson",
-			"price": "$60"
+			"price": "$70 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/rha.jpg",
 			"device": "MA750i",
 			"type": "In-ear monitors",
 			"company": "RHA",
-			"price": "$130"
+			"price": "$150 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/sonos.jpg",
 			"device": "Play: 1",
 			"type": "WiFi connected speaker",
 			"company": "Sonos",
-			"price": "$229"
+			"price": "$220 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/walsh.jpg",
 			"device": "Walsh 3",
 			"type": "Speakers (passive)",
 			"company": "Ohm",
-			"price": "$2,000"
+			"price": "$1,200 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/evo.jpg",
 			"device": "Evo 2/8",
 			"type": "Speakers (passive)",
 			"company": "Wharfedale",
-			"price": "$400"
+			"price": "$600 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/asgard.jpg",
 			"device": "Asgard 2",
 			"type": "Amplifier",
 			"company": "Schiit",
-			"price": "$299"
+			"price": "$325 CAD"
 		}, {
-			"deviceImage": "",
+			"deviceImage": "images/devices/modi.jpg",
 			"device": "Modi",
 			"type": "DAC",
 			"company": "Schiit",
-			"price": "$99"
+			"price": "$130 CAD"
 
 
 		}
