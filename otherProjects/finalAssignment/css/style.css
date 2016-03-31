@@ -78,6 +78,9 @@ color: white;
 .thumbContent{
 color: white;
 }
+.thumbnail{
+margin: 15px;
+}
 
 .thumbLabel{
 color: white;

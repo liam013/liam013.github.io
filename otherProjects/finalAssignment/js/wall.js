@@ -8,14 +8,14 @@ $.getJSON("jsonDatabase/wall.json",function(data){
     $.each(data.albums, function(index, item){
         
      html += '<div class="col-md-3">'+
-             '<img class="albumImage" src=""' + item.albumImage + '"/>' + "<br>" +
+             '<img class="albumImage" src="' + item.albumImage + '"/>' + "<br>" +
              '<div class="albumArtist">' + "<strong>Artist: </strong>" + item.artist + '</div>'+
              '<div class="albumTitle">' + "<strong>Album: </strong>" + item.albumTitle + '</div>'+
                '<div class="albumYear">' + "<strong>Year: </strong>" + item.year + '</div>'+
              '<div class="albumGenre">' + "<strong>Genre: </strong>" + item.genre + '</div>'
          
 
-     html += '</div>'; //col-md-3 
+     html += '<br>' + '</div>'; //col-md-3 
      
     })//each album
   

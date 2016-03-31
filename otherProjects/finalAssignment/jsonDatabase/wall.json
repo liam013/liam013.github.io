@@ -1,129 +1,129 @@
 {
 	"albums": [{
-			"albumImage": "",
-			"artist": "Bruce",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/bruce.jpg",
+			"artist": "Bruce Springsteen",
+			"albumTitle": "Born to Run",
+			"year": "1975",
+			"genre": "Heartland Rock"
 		},
 
 		{
-			"albumImage": "",
+			"albumImage": "images/albums/tomWaitsBlue.jpg",
 			"artist": "Tom Waits",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumTitle": "Blue Valentine",
+			"year": "1978",
+			"genre": "Singer/songwriter"
 		},
 
 		{
-			"albumImage": "",
+			"albumImage": "images/albums/alison.jpg",
 			"artist": "Alison Krauss",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumTitle": "Forget About It",
+			"year": "1999",
+			"genre": "Bluegrass"
 		},
 
 		{
-			"albumImage": "",
+			"albumImage": "images/albums/pinkFloydWish.jpg",
 			"artist": "Pink Floyd",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumTitle": "Wish You Were Here",
+			"year": "1975",
+			"genre": "Progressive Rock"
 		},
 
 		{
-			"albumImage": "",
+			"albumImage": "images/albums/rage.jpg",
 			"artist": "Rage Against the Machine",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumTitle": "Rage Against the Machine",
+			"year": "1992",
+			"genre": "Rap Metal"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/nirvanna.jpg",
+			"artist": "Nirvana",
+			"albumTitle": "MTV Unplugged In New York",
+			"year": "1994",
+			"genre": "Grunge"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/tool.jpg",
+			"artist": "Tool",
+			"albumTitle": "Lateralus",
+			"year": "2001",
+			"genre": "Progressive Metal"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/sara.jpg",
+			"artist": "Sara K",
+			"albumTitle": "Hell or High Water",
+			"year": "2006",
+			"genre": "Singer/songwriter"
 
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/pinkFloydMoon.jpg",
+			"artist": "Pink Floyd",
+			"albumTitle": "Dark Side of the Moon",
+			"year": "1973",
+			"genre": "Progressive Rock"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/miles.jpg",
+			"artist": "Miles Davis",
+			"albumTitle": "Kind of Blue",
+			"year": "1959",
+			"genre": "Modal Jazz"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/daft.jpg",
+			"artist": "Daft Punk",
+			"albumTitle": "Discovery",
+			"year": "2001",
+			"genre": "Electro-disco"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/tomWaitsSmall.jpg",
+			"artist": "Tom Waits",
+			"albumTitle": "Small Change",
+			"year": "1976",
+			"genre": "Piano Blues"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/stevie.jpg",
+			"artist": "Stevie Ray Vaughan",
+			"albumTitle": "Texas Flood",
+			"year": "1983",
+			"genre": "Blues Rock"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/porcupine.jpg",
+			"artist": "Porcupine Tree",
+			"albumTitle": "In Absentia",
+			"year": "2002",
+			"genre": "Progressive Rock"
 		},
 
 		{
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/art.jpg",
+			"artist": "Art Blakey",
+			"albumTitle": "Moanin'",
+			"year": "1959",
+			"genre": "Hard Bop Jazz"
 		}, {
-			"albumImage": "",
-			"artist": "",
-			"albumTitle": "",
-			"year": "",
-			"genre": ""
+			"albumImage": "images/albums/norah.jpg",
+			"artist": "Norah Jones",
+			"albumTitle": "Come Away With Me",
+			"year": "2002",
+			"genre": "Vocal Jazz"
 		}
 	],
 	"devices": [
