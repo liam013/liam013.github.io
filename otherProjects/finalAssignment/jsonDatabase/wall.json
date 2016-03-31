@@ -131,7 +131,7 @@
 		{
 			"deviceImage": "images/devices/e12.jpg",
 			"device": "E12",
-			"type": "Portable amp",
+			"type": "Portable amp (solid-state)",
 			"company": "FiiO",
 			"price": "$130 CAD"
 
@@ -192,7 +192,7 @@
 		}, {
 			"deviceImage": "images/devices/asgard.jpg",
 			"device": "Asgard 2",
-			"type": "Amplifier",
+			"type": "Amplifier (solid-state)",
 			"company": "Schiit",
 			"price": "$325 CAD"
 		}, {
