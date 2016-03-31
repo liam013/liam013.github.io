@@ -5,18 +5,18 @@ $.getJSON("jsonDatabase/wall.json",function(data){
     console.dir(data);
     
     var html = "";
-    $.each(item.album, function(data, item){
+    $.each(data.albums, function(index, item){
         
      html += '<div class="col-md-3">'+
              '<img class="albumImage" src=""' + item.albumImage + '"/>' + "<br>" +
              '<div class="albumArtist">' + "<strong>Artist: </strong>" + item.artist + '</div>'+
-             '<div class="albumYear">' + "<strong>Year: </strong>" + item.year + '</div>'+
+             '<div class="albumTitle">' + "<strong>Album: </strong>" + item.albumTitle + '</div>'+
+               '<div class="albumYear">' + "<strong>Year: </strong>" + item.year + '</div>'+
              '<div class="albumGenre">' + "<strong>Genre: </strong>" + item.genre + '</div>'
          
-      
-     html += '</div>'; //col-md-3
-        
-       
+
+     html += '</div>'; //col-md-3 
+     
     })//each album
   
    $("#albumData").append(html);
@@ -24,18 +24,17 @@ $.getJSON("jsonDatabase/wall.json",function(data){
     
     var device = "";
     
-     $.each(item.equipment, function(equipment, item){
+     $.each(data.devices, function(ind, item){
      device += '<div class="col-md-3">'+
              '<img class="deviceImage" src=""' + item.deviceImage + '"/>' + "<br>" +
-             '<div class="deviceName">' + "<strong>Name: </strong>" + item.device + '</div>'+
+             '<div class="deviceName">' + "<strong>Product: </strong>" + item.device + '</div>'+
              '<div class="deviceType">' + "<strong>Device: </strong>" + item.type + '</div>'+
-             '<div class="deviceCompany">' + "<strong>Company: </strong>" + item.comapny + '</div>'+
+             '<div class="deviceCompany">' + "<strong>Company: </strong>" + item.company + '</div>'+
              '<div class="devicePrice">' + "<strong>Price: </strong>" + item.price + '</div>'
          
       
      device += '</div>'; //col-md-3
         
-       
     })//each device 
       $("#deviceData").append(device);   
  
