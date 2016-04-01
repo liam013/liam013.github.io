@@ -22,27 +22,79 @@ $(document).ready(function() {
 
   //change the backgrund color on focus, blue
   $("#mySingleLineText").on("focus", function() {
-      $("#log").append("<br>input focus");
+      $("#log").append("<br>Name field entered");
       $(this).css("background-color", "#F7F8E0");
     })
     .on("blur", function() {
-      $("#log").append("<br>input blur");
+      $("#log").append("<br>Name field exited");
+      $(this).css("background-color", "#FFF");
+    });
+    
+    $("#mySingleLineText2").on("focus", function() {
+      $("#log").append("<br>E-mail field entered");
+      $(this).css("background-color", "#F7F8E0");
+    })
+    .on("blur", function() {
+      $("#log").append("<br>E-mail field exited");
+      $(this).css("background-color", "#FFF");
+    });
+    
+    $("#mySingleLineText3").on("focus", function() {
+      $("#log").append("<br>Address field entered");
+      $(this).css("background-color", "#F7F8E0");
+    })
+    .on("blur", function() {
+      $("#log").append("<br>Address field exited");
       $(this).css("background-color", "#FFF");
     });
 
+    $("#myTextarea").on("focus", function() {
+      $("#log").append("<br>Explanation field entered");
+      $(this).css("background-color", "#F7F8E0");
+    })
+    .on("blur", function() {
+      $("#log").append("<br>Explanation field exited");
+      $(this).css("background-color", "#FFF");
+    });
   //give the user a message about their selection
   $("#mySelect").on("change", function() {
 
     var val = $(this).val();
-    $("#log").append("<br>select changed to " + val);
-    $("#mySelectMessage").html(val + " is a nice selection!");
-
+    $("#log").append("<br>Length of service changed to " + val);
+    
   });
 
+  $('input:radio[name=gender]').change(function() {
+        if (this.value == 'Yes') {
+            $("#log").append("<br>" + "Email notification changed to: yes");
+        }
+        else if (this.value == 'No') {
+        
+            $("#log").append("<br>" + "Email notification changed to: no");
+        }
+    });
+
+   /* $('input:checkbox[name=vehicle]').change(function() {
+        if (this.value == 'Consultation') {
+            $("#log").append("<br>" + "Service changed to: Consultation");
+        }
+        else (this.value == 'Repairs') {
+        
+            $("#log").append("<br>" + "Service changed to: Repairs");
+        }
+        
+        else if (this.value == 'Installation') {
+        
+            $("#log").append("<br>" + "Service changed to: Installation");
+        }
+    }); */
+
+    
+    /*if("#myTextare" && "") */
   //user clicks the button
   $("#myButton").on("click", function() {
 
-    $("#log").append("<br>User clicked the button");
+    $("#log").append("<br>User placed an order");
 
     var userOrder = {};
 
@@ -53,6 +105,7 @@ $(document).ready(function() {
     userOrder.myCheckValues = [];
 
     $("[name='vehicle']:checked").each(function() {
+    $("#log").append("<br>" + 'vehicle');
       userOrder.myCheckValues.push($(this).val());
     });
 
@@ -61,7 +114,7 @@ $(document).ready(function() {
     $("#log").append("<br>Value of select is: " + userOrder.mySelect);
     $("#log").append("<br>Value of radio button is: " + userOrder.myRadio);
     $("#log").append("<br>Value of checks is: " + userOrder.myCheckValues.join());
-    $("#log").append("<br><br>Value of userOrder is: " + JSON.stringify(userOrder));
+   /* $("#log").append("<br><br>Value of userOrder is: " + JSON.stringify(userOrder)); */
 
     /*
         var myInput = $("#mySingleLineText").val();
