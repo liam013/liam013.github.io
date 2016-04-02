@@ -1,22 +1,18 @@
 $(document).ready(function() {
-  /*
-  - click- done
-  - focus
-  - blur
-  - change
-  - mouseenter & mouseleave
-  $("#").on("", function() {
 
-  });
-  */
+    $(".hide-name").hide();
+    $(".hide-mail").hide();
+    $(".hide-address").hide();
+    $(".hide-case").hide();
+    
   //change button text
   $("#myButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
-      $(this).text("ORDER NOW!!!");
+      $(this).text("complete order");
     })
     .on("mouseleave", function() {
       $("#log").append("<br>Button mouseleave");
-      $(this).text("Click Me!");
+      $(this).text("order now");
     });
 
 
@@ -73,32 +69,71 @@ $(document).ready(function() {
             $("#log").append("<br>" + "Email notification changed to: no");
         }
     });
-
-   /* $('input:checkbox[name=vehicle]').change(function() {
-        if (this.value == 'Consultation') {
-            $("#log").append("<br>" + "Service changed to: Consultation");
-        }
-        else (this.value == 'Repairs') {
-        
-            $("#log").append("<br>" + "Service changed to: Repairs");
-        }
-        
-        else if (this.value == 'Installation') {
-        
-            $("#log").append("<br>" + "Service changed to: Installation");
-        }
-    }); */
-
     
-    /*if("#myTextare" && "") */
+    $('#checkbox1').change(function() {
+        if($(this).is(":checked")) {
+
+        $('#log').append("<br>" + "Consultation service selected"); 
+        }
+        else{
+        $('#log').append("<br>" + "Consultation service removed"); 
+        }
+    });
+    
+     $('#checkbox2').change(function() {
+        if($(this).is(":checked")) {
+
+        $('#log').append("<br>" + "Repair service selected"); 
+        }
+        else{
+        $('#log').append("<br>" + "Repair service removed"); 
+        }
+    });
+    
+     $('#checkbox3').change(function() {
+        if($(this).is(":checked")) {
+
+        $('#log').append("<br>" + "Installation service selected"); 
+        }
+        else{
+        $('#log').append("<br>" + "Installation service removed"); 
+        }
+    });
+
+
   //user clicks the button
   $("#myButton").on("click", function() {
+      
+       if (document.getElementById("mySingleLineText").value == "") { 
+        alert("Your forgot to enter your name");  
+            $(".hide-name").show();
+        return false;  // stop submission until textbox is not '' 
+        }  
 
+         if (document.getElementById("mySingleLineText2").value == "") { 
+        alert("Your forgot to enter your e-mail");  
+            $(".hide-mail").show();
+        return false;  // stop submission until textbox is not '' 
+        }  
+      
+         if (document.getElementById("mySingleLineText3").value == "") { 
+        alert("Your forgot to enter your address");  
+            $(".hide-adress").show();
+        return false;  // stop submission until textbox is not '' 
+        }  
+      
+        if (document.getElementById("myTextarea").value == "" && $('#checkbox2').is(":checked") || $('#checkbox3').is(":checked")){
+        alert("You forgot to enter an explanation of your situation");
+        $(".hide-case").show();
+        return false;
+        }
     $("#log").append("<br>User placed an order");
 
     var userOrder = {};
 
     userOrder.myInput = $("#mySingleLineText").val();
+    userOrder.myInput2 = $("#mySingleLineText2").val();
+    userOrder.myInput3 = $("#mySingleLineText3").val();  
     userOrder.myTextarea = $("#myTextarea").val();
     userOrder.mySelect = $("#mySelect").val();
     userOrder.myRadio = $("[name='gender']:checked").val();
@@ -109,11 +144,14 @@ $(document).ready(function() {
       userOrder.myCheckValues.push($(this).val());
     });
 
-    $("#log").append("<br>Value of input is: " + userOrder.myInput);
-    $("#log").append("<br>Value of textarea is: " + userOrder.myTextarea);
-    $("#log").append("<br>Value of select is: " + userOrder.mySelect);
-    $("#log").append("<br>Value of radio button is: " + userOrder.myRadio);
-    $("#log").append("<br>Value of checks is: " + userOrder.myCheckValues.join());
+    $("#rec").append("<br>Name: " + userOrder.myInput);
+    $("#rec").append("<br>E-mail: " + userOrder.myInput2);  
+    $("#rec").append("<br>Address: " + userOrder.myInput3);  
+    $("#rec").append("<br>Explanation: " + userOrder.myTextarea);
+    $("#rec").append("<br>Duration of service: " + userOrder.mySelect);
+    $("#rec").append("<br>Services: " + userOrder.myCheckValues.join());
+    $("#rec").append("<br>E-mailing list: " + userOrder.myRadio + "<br><br>");
+    
    /* $("#log").append("<br><br>Value of userOrder is: " + JSON.stringify(userOrder)); */
 
     /*
@@ -139,7 +177,14 @@ $(document).ready(function() {
         $("#log").append("<br>Value of radio button is: " + myRadio);
         $("#log").append("<br>Value of checks is: " + myCheckValues.join());
     */
-  })
+      
+       
+
+
+        //if user leaves myTextArea blank, return the alert and highlight myTextArea red  
+     
+      
+})
 
 
 });

@@ -1,5 +1,6 @@
 body{
 background-image: url("../images/splash.jpg");
+background-size: 100% 100%;
 background-repeat: none;
 }
 .splashPage{
@@ -117,6 +118,12 @@ color: #fff;
 margin-top: 40px;
 margin: 0 auto;
 width: 40%;
+}
+
+.purchase{
+margin-top: 40px;
+margin: 0 auto;
+width: 35%;
 }
 
 .exit{

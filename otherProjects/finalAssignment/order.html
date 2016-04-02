@@ -23,6 +23,24 @@ padding-top: 25px;
     radio{
     transform: scale(4);
     }
+    .hide-name {
+    color: red;
+    }
+
+    .hide-address {
+    color: red;
+    }
+    .hide-case {
+    color: red;
+    }
+
+    .hide-mail {
+    color: red;
+    }
+    .right{
+    float: right;
+    border: dotted 1px gray;
+    }
 </style>
 
 </head>
@@ -41,56 +59,72 @@ padding-top: 25px;
     <hr class="style14">
     <br><br>
     
+    <div class="right col-md-5"><!--log -->
+          <div id="rec"><h2>Reciept (order summary): </h2></div>
+      </div>
+   
+    
     <div class="row">
-
       <div class="col-md-4"><!-- input-->
+          <p><strong>Name:</strong></p>
         <input id="mySingleLineText" class="form-control" type="text" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'">
       </div>
+        <span class="hide-name">*</span>
         <br><br><br><br>
-        <div class="col-md-4"><!-- input-->
+        
+        <div class="col-md-4"><!-- input2-->
+            <p><strong>E-mail:</strong></p>
         <input id="mySingleLineText2" class="form-control" type="text" placeholder="Enter your e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your e-mail'">
       </div>
+        <span class="hide-mail">*</span>
         <br><br><br><br>
-        <div class="col-md-4"><!-- input-->
-        <input id="mySingleLineText3" class="form-control" type="text" placeholder="Enter your address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your addressame'">
+         
+        <div class="col-md-4"><!-- input3-->
+            <p><strong>Address:</strong></p>
+        <input id="mySingleLineText3" class="form-control" type="text" placeholder="Enter your delivery address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your delivery address'">
       </div>
+        <span class="hide-address">*</span>
         <br><br><br><br>
       <div class="col-md-3"></div>
 </div>
 <div class="row">
-      <div class="col-md-6"><!--textarea -->
-        <textarea id="myTextarea" class="form-control" rows="10" cols="50" placeholder="If selecting repair or installation, briefly explain your situation/sinario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'If selecting repair or installation, briefly explain your situation/sinario'"></textarea>
-      </div>
-    <br><br><br><br>
-     
-    <div class="col-md-12"><!-- checkbox-->
+      
+           <div class="col-md-7"><!-- checkbox-->
         <br><br>
-        <div><p><strong>Select a Service:</strong></p></div>
+        <p><strong>Select a Service:</strong></p>
         <div class="checkbox">
           <label>
-            <input type="checkbox" name="vehicle" value="Consultation" checked>
+            <input id="checkbox1" type="checkbox" name="vehicle" value="Consultation">
             Consultation
           </label>
         </div>
 
-        <div class="checkbox" >
+        <div class="checkbox">
           <label>
-            <input type="checkbox" name="vehicle" value="Repairs">
+            <input id="checkbox2" type="checkbox" name="vehicle" value="Repairs">
             Repairs
           </label>
         </div>
         
         <div class="checkbox">
           <label>
-            <input type="checkbox" name="vehicle" value="Installation">
+            <input id="checkbox3" type="checkbox" name="vehicle" value="Installation">
             Installation
           </label>
         </div>
 
       </div>
+          
+    <br><br><br><br>
+          <div class="col-md-6"><!--textarea -->
+      <p><strong>Situation:</strong></p>
+        <textarea id="myTextarea" class="form-control" rows="10" cols="50" placeholder="If selecting repair or installation service(s), briefly explain your situation/sinario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'If selecting repair or installation service(s), briefly explain your situation/sinario'"></textarea>
+      </div>
+    <span class="hide-case">*</span>
     <br><br>
-    
-      <div class="col-md-6"><!--select -->
+      <div class="col-md-7"><!--select -->
+          <br><br>
+          <p><strong>Duration of appointment:</strong></p>
         <select id="mySelect" class="form-control">
           <option value="30 minute assessment (free)" selected>30 minute assessment (free)</option>
           <option value="1 hour">1 hour</option>
@@ -99,12 +133,13 @@ padding-top: 25px;
           <option value="4 hours">4 hours</option>
           <option value="5+ hours">5+ hours</option>
         </select>
-          <div id="mySelectMessage"></div>
+         <br><br>
+          <!-- <div id="mySelectMessage"></div> -->
       </div>
 <br><br>
-      <div class="col-md-12"><!-- radio-->
-<br>
-          <div><p><strong>Would you like to be additional emails about promotions and details about audio tradeshow events: </strong></p></div>
+      <div class="col-md-7"><!-- radio-->
+          
+<p><strong>Would you like to be additional emails about promotions and details about audio tradeshow events: </strong></p>
         <div class="radio">
           <label>
             <input type="radio" name="gender" value="Yes" >
@@ -124,17 +159,16 @@ padding-top: 25px;
       </div>
       
       <div class="col-md-6"><!--button -->
-        <button class="btn btn-default" id="myButton" type="button">Click Me!</button>
+        <button class="purchase btn btn-success btn-outline" id="myButton" type="button">ORDER NOW</button>
       </div>
 
       <div class="col-md-12"><!--log -->
-          <div id="log"><h3>History: </h3></div>
+          <div id="log"><h3>Order History: </h3></div>
       </div>
 
     </div>
     
-    <div class="row">
-        </div>
+   
     
   <!--Closes container -->
     </div>
