@@ -1,4 +1,3 @@
-$(document).ready(function() {
 $.get("partials/nav.html", function(data){
 
     $(document).ready(function(){ 
@@ -13,4 +12,3 @@ $.get("partials/nav.html", function(data){
 
 });
 
-});
