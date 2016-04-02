@@ -12,4 +12,4 @@ function pauseAudio() {
     alert("Music is paused");
   
 } 
-
+ 

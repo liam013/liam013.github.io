@@ -5,6 +5,12 @@ $(document).ready(function() {
     $(".hide-address").hide();
     $(".hide-case").hide();
     
+    
+    
+    if(window.location.href == ){
+    $("#checkbox1").is(":checked");
+       }
+    
   //change button text
   $("#myButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
@@ -106,27 +112,33 @@ $(document).ready(function() {
       
        if (document.getElementById("mySingleLineText").value == "") { 
         alert("Your forgot to enter your name");  
-            $(".hide-name").show();
+        $(".hide-name").show();
+        $("#mySingleLineText").css("border-color", "red");
+
         return false;  // stop submission until textbox is not '' 
         }  
 
          if (document.getElementById("mySingleLineText2").value == "") { 
         alert("Your forgot to enter your e-mail");  
             $(".hide-mail").show();
+             $("#mySingleLineText2").css("border-color", "red");
         return false;  // stop submission until textbox is not '' 
         }  
       
          if (document.getElementById("mySingleLineText3").value == "") { 
         alert("Your forgot to enter your address");  
             $(".hide-adress").show();
+             $("#mySingleLineText3").css("border-color", "red");
         return false;  // stop submission until textbox is not '' 
         }  
       
         if (document.getElementById("myTextarea").value == "" && $('#checkbox2').is(":checked") || $('#checkbox3').is(":checked")){
         alert("You forgot to enter an explanation of your situation");
         $(".hide-case").show();
+        $("#myTextarea").css("border-color", "red");
         return false;
         }
+      
     $("#log").append("<br>User placed an order");
 
     var userOrder = {};
@@ -140,17 +152,16 @@ $(document).ready(function() {
     userOrder.myCheckValues = [];
 
     $("[name='vehicle']:checked").each(function() {
-    $("#log").append("<br>" + 'vehicle');
       userOrder.myCheckValues.push($(this).val());
     });
 
-    $("#rec").append("<br>Name: " + userOrder.myInput);
+    $("#rec").append("Name: " + userOrder.myInput);
     $("#rec").append("<br>E-mail: " + userOrder.myInput2);  
     $("#rec").append("<br>Address: " + userOrder.myInput3);  
     $("#rec").append("<br>Explanation: " + userOrder.myTextarea);
     $("#rec").append("<br>Duration of service: " + userOrder.mySelect);
     $("#rec").append("<br>Services: " + userOrder.myCheckValues.join());
-    $("#rec").append("<br>E-mailing list: " + userOrder.myRadio + "<br><br>");
+    $("#rec").append("<br>E-mailing list: " + userOrder.myRadio + "<br><hr>");
     
    /* $("#log").append("<br><br>Value of userOrder is: " + JSON.stringify(userOrder)); */
 
@@ -186,5 +197,5 @@ $(document).ready(function() {
       
 })
 
-
+ 
 });

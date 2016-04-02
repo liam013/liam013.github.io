@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
  
     <link rel="icon" href="images/favicon-32x32.png">
+    
+  
+
 <style>
 
 .col-md-6 {
 padding-top: 25px;
+float: left;
 }
     body{
     color: white;
@@ -41,6 +45,9 @@ padding-top: 25px;
     float: right;
     border: dotted 1px gray;
     }
+    #rec{
+    display: block;
+    }
 </style>
 
 </head>
@@ -50,8 +57,9 @@ padding-top: 25px;
   <source src="audio/song.mp3" type="audio/mpeg">
   <source src="audio/song.ogg" type="audio/ogg">
 </audio>
-   
-
+   <div id="buyConsultation"></div>
+    <div id="buyRepairs"></div>
+    <div id="buyInstallation"></div>
 
 <div class="container-fluid">
     
@@ -66,30 +74,30 @@ padding-top: 25px;
     
     <div class="row">
       <div class="col-md-4"><!-- input-->
-          <p><strong>Name:</strong></p>
+          <p><span class="hide-name">* </span><strong> Name:</strong></p>
         <input id="mySingleLineText" class="form-control" type="text" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'">
       </div>
-        <span class="hide-name">*</span>
+        
         <br><br><br><br>
         
         <div class="col-md-4"><!-- input2-->
-            <p><strong>E-mail:</strong></p>
+            <p><span class="hide-mail">* </span><strong> E-mail:</strong></p>
         <input id="mySingleLineText2" class="form-control" type="text" placeholder="Enter your e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your e-mail'">
       </div>
-        <span class="hide-mail">*</span>
+        
         <br><br><br><br>
          
         <div class="col-md-4"><!-- input3-->
-            <p><strong>Address:</strong></p>
+            <p><span class="hide-address">* </span><strong> Address:</strong></p>
         <input id="mySingleLineText3" class="form-control" type="text" placeholder="Enter your delivery address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your delivery address'">
       </div>
-        <span class="hide-address">*</span>
+        
         <br><br><br><br>
       <div class="col-md-3"></div>
 </div>
 <div class="row">
       
-           <div class="col-md-7"><!-- checkbox-->
+           <div class="col-md-6"><!-- checkbox-->
         <br><br>
         <p><strong>Select a Service:</strong></p>
         <div class="checkbox">
@@ -114,13 +122,13 @@ padding-top: 25px;
         </div>
 
       </div>
-          
+ 
     <br><br><br><br>
-          <div class="col-md-6"><!--textarea -->
-      <p><strong>Situation:</strong></p>
+          <div class="col-md-7"><!--textarea -->
+      <p> <span class="hide-case">* </span><strong> Situation:</strong></p>
         <textarea id="myTextarea" class="form-control" rows="10" cols="50" placeholder="If selecting repair or installation service(s), briefly explain your situation/sinario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'If selecting repair or installation service(s), briefly explain your situation/sinario'"></textarea>
       </div>
-    <span class="hide-case">*</span>
+   
     <br><br>
       <div class="col-md-7"><!--select -->
           <br><br>
