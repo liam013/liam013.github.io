@@ -7,7 +7,7 @@ $(document).ready(function() {
     
     
     
-    if(window.location.href == "http://liam013.github.io/otherProjects/finalAssignment/order.html#buyConsultation"){
+    if(window.location.href == "http://liam013.github.io/otherProjects/finalAssignment/order.html#buyConsultation/"){
     $("#checkbox1").prop('checked', true);
        }
     
