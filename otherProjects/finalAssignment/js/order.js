@@ -8,7 +8,7 @@ $(document).ready(function() {
     
     
     if(window.location.href == "http://liam013.github.io/otherProjects/finalAssignment/order.html#buyConsultation"){
-    $("#checkbox1").is(":checked");
+    $("#checkbox1").prop('checked', true);
        }
     
   //change button text
