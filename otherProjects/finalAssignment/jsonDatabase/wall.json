@@ -138,25 +138,25 @@
 		}, {
 			"deviceImage": "images/devices/gs1000e.jpg",
 			"device": "GS1000e",
-			"type": "Headphone",
+			"type": "Headphones",
 			"company": "Grado",
 			"price": "$1,300 CAD"
 		}, {
 			"deviceImage": "images/devices/rs1i.jpg",
 			"device": "RS1i",
-			"type": "Headphone",
+			"type": "Headphones",
 			"company": "Grado",
 			"price": "$900 CAD"
 		}, {
 			"deviceImage": "images/devices/sr60e.jpg",
 			"device": "SR60e",
-			"type": "Headphone",
+			"type": "Headphones",
 			"company": "Grado",
 			"price": "$120 CAD"
 		}, {
 			"deviceImage": "images/devices/hd650.jpg",
 			"device": "HD 650",
-			"type": "Headphone",
+			"type": "Headphones",
 			"company": "Sennheiser",
 			"price": "$550 CAD"
 		}, {
