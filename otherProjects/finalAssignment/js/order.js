@@ -5,67 +5,129 @@ $(document).ready(function() {
     $(".hide-address").hide();
     $(".hide-case").hide();
     
+
+   
+      $('#startRentDate').datepicker({
+      format: "MM dd, yyyy"
+      
+      })
+            
+      $('#disableTimeRangesExample').timepicker({'disableTimeRanges': [
+        ['12am', '8am'], //store opens
+        ['12pm', '1:00pm'], //lunch break
+        ['8:30pm', '11:30pm'], //store closes
+        ]                                        
+      },
+      { 'timeFormat': 'H:i A' },
+      { 'scrollDefault': 'now' })
+
+   //if url ends with #buyConsultation check the "consultation" box in the services order form   
+if(window.location.href.indexOf("buyConsultation") > -1){
+$('#checkbox1').prop('checked', true);
+} 
     
+    //if url ends with #buyRepairs check the "repairs" box in the services order form
+if(window.location.href.indexOf("buyRepairs") > -1){
+$('#checkbox2').prop('checked', true);
+} 
     
-    if(window.location.href == "http://liam013.github.io/otherProjects/finalAssignment/order.html#buyConsultation/"){
-    $("#checkbox1").prop('checked', true);
-       }
+    //if url ends with #buyInstallation check the "installation" box in the services order form
+if(window.location.href.indexOf("buyInstallation") > -1){
+$('#checkbox3').prop('checked', true);
+} 
+
     
-  //change button text
+  //change button text on mouse enter
   $("#myButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
       $(this).text("complete order");
     })
+  
+  //change button text on mouse leave
     .on("mouseleave", function() {
       $("#log").append("<br>Button mouseleave");
       $(this).text("order now");
     });
 
 
-  //change the backgrund color on focus, blue
+  //change the background color on focus to blue
+  //append "name field entered" in the #log area of the page
+  //change field background color to off-white
   $("#mySingleLineText").on("focus", function() {
       $("#log").append("<br>Name field entered");
       $(this).css("background-color", "#F7F8E0");
     })
+  
+  //append "name field exited" in the #log area of the page 
+  //change field background to white
     .on("blur", function() {
       $("#log").append("<br>Name field exited");
       $(this).css("background-color", "#FFF");
     });
     
+   //append "e-mail field entered" in the #log area of the page 
+   //change field background color to off-white
     $("#mySingleLineText2").on("focus", function() {
       $("#log").append("<br>E-mail field entered");
       $(this).css("background-color", "#F7F8E0");
     })
+    
+    //append "e-mail field exited" in the #log area of the page 
+    //change field background to white
     .on("blur", function() {
       $("#log").append("<br>E-mail field exited");
       $(this).css("background-color", "#FFF");
     });
     
+    
+     //append "address field entered" in the #log area of the page 
+    //change field background to off-white
     $("#mySingleLineText3").on("focus", function() {
       $("#log").append("<br>Address field entered");
       $(this).css("background-color", "#F7F8E0");
     })
+    
+     //append "address field exited" in the #log area of the page 
+    //change field background to white
     .on("blur", function() {
       $("#log").append("<br>Address field exited");
       $(this).css("background-color", "#FFF");
     });
 
+    
+    //append "explanation field entered" in the #log area of the page 
+    //change field background to off-white
     $("#myTextarea").on("focus", function() {
       $("#log").append("<br>Explanation field entered");
       $(this).css("background-color", "#F7F8E0");
     })
+    
+    //append "explanation field exited" in the #log area of the page 
+    //change field background to white
     .on("blur", function() {
       $("#log").append("<br>Explanation field exited");
       $(this).css("background-color", "#FFF");
     });
-  //give the user a message about their selection
+    
+    //hour length of service
   $("#mySelect").on("change", function() {
-
+    //append "length of service change to: " in the #log area of the page
     var val = $(this).val();
     $("#log").append("<br>Length of service changed to " + val);
     
   });
 
+  $("#startRentDate").on("change", function(){
+  var val = $(this).val();
+  $("#log").append("<br>Day of service changed to " + val);
+  });
+    
+ $("#disableTimeRangesExample").on("change", function(){
+  var val = $(this).val();
+  $("#log").append("<br>Time of service changed to " + val);
+  });
+
+    //radio button 
   $('input:radio[name=gender]').change(function() {
         if (this.value == 'Yes') {
             $("#log").append("<br>" + "Email notification changed to: yes");
@@ -106,9 +168,14 @@ $(document).ready(function() {
         }
     });
 
+       $('.target').click(function() {
+    $('#orderNumber').html(function(i, val) { return val*1+1 });
+})
 
   //user clicks the button
   $("#myButton").on("click", function() {
+      
+   
       
        if (document.getElementById("mySingleLineText").value == "") { 
         alert("Your forgot to enter your name");  
@@ -139,33 +206,85 @@ $(document).ready(function() {
         return false;
         }
       
+        $("#myTextarea").text($(this).val() || "N/A");
+      
+      
+        if (document.getElementById("startRentDate").value == "") { 
+        alert("Your forgot to set a date for the service");  
+           
+             $("#startRentDate").css("border-color", "red");
+        return false;  // stop submission until textbox is not '' 
+        }
+      
+       if (document.getElementById("disableTimeRangesExample").value == "") { 
+        alert("Your forgot to set a time for the service");  
+           
+             $("#disableTimeRangesExample").css("border-color", "red");
+        return false;  // stop submission until textbox is not '' 
+        }
+      
     $("#log").append("<br>User placed an order");
 
-    var userOrder = {};
+        
+ 
 
+   // $("[name='vehicle']:checked").each(function() {
+   //   userOrder.myCheckValues.push($(this).val());
+   // });
+
+   // $("#rec").append("Name: " + userOrder.myInput);
+    //$("#rec").append("<br>E-mail: " + userOrder.myInput2);  
+    //$("#rec").append("<br>Address: " + userOrder.myInput3);  
+    //$("#rec").append("<br>Explanation: " + userOrder.myTextarea);
+    //$("#rec").append("<br>Duration of service: " + userOrder.mySelect);
+    //$("#rec").append("<br>Services: " + userOrder.myCheckValues.join());
+    //$("#rec").append("<br>E-mailing list: " + userOrder.myRadio + "<br><hr>");
+    
+     // alert("Your order is being proccessed");
+      
+      
+         var order = {};
+
+    var formData = $("input, select");
+    formData.each(function (){
+        
+    var id = $(this).attr("id");
+        
+    order[id] = $(this).val();
+        
+    })
+    
+    alert("You have successfully ordered: "+ JSON.stringify(order));
+  var userOrder = {};
     userOrder.myInput = $("#mySingleLineText").val();
     userOrder.myInput2 = $("#mySingleLineText2").val();
     userOrder.myInput3 = $("#mySingleLineText3").val();  
     userOrder.myTextarea = $("#myTextarea").val();
+    userOrder.startRentDate = $("#startRentDate").val();
+    userOrder.disableTimeRangesExample = $("#disableTimeRangesExample").val();
     userOrder.mySelect = $("#mySelect").val();
     userOrder.myRadio = $("[name='gender']:checked").val();
     userOrder.myCheckValues = [];
-
-    $("[name='vehicle']:checked").each(function() {
+      
+      
+     $("[name='vehicle']:checked").each(function() {
       userOrder.myCheckValues.push($(this).val());
-    });
+    })
 
     $("#rec").append("Name: " + userOrder.myInput);
     $("#rec").append("<br>E-mail: " + userOrder.myInput2);  
     $("#rec").append("<br>Address: " + userOrder.myInput3);  
+    $("#rec").append("<br>Service(s): " + userOrder.myCheckValues.join());
     $("#rec").append("<br>Explanation: " + userOrder.myTextarea);
     $("#rec").append("<br>Duration of service: " + userOrder.mySelect);
-    $("#rec").append("<br>Services: " + userOrder.myCheckValues.join());
-    $("#rec").append("<br>E-mailing list: " + userOrder.myRadio + "<br><hr>");
+    $("#rec").append("<br>Date: " + userOrder.startRentDate);
+    $("#rec").append("<br>Time: " + userOrder.disableTimeRangesExample);  
     
-   /* $("#log").append("<br><br>Value of userOrder is: " + JSON.stringify(userOrder)); */
+    
+    $("#rec").append("<br>E-mailing list: " + userOrder.myRadio + "<br><hr>");   
 
-    /*
+        var startRentDate = $("#startRentDate").val();
+        var disableTimeRangesExample = $("#disableTimeRangesExample").val();
         var myInput = $("#mySingleLineText").val();
         var myTextarea = $("#myTextarea").val();
         var mySelect = $("#mySelect").val();
@@ -179,7 +298,7 @@ $(document).ready(function() {
         $("[name='vehicle']:checked").each(function() {
           myCheckValues.push($(this).val());
         });
-
+/*
         $("#log").append("<br>User clicked the button");
 
         $("#log").append("<br>Value of input is: " + myInput);
