@@ -120,12 +120,6 @@ margin: 0 auto;
 width: 40%;
 }
 
-.purchase{
-margin-top: 40px;
-margin: 0 auto;
-width: 35%;
-}
-
 .exit{
 margin-top: 40px;
 margin: 0 auto;
@@ -200,3 +194,14 @@ width: 40%;
   color: #fff;
 }
 
+.purchase{
+margin-top: 40px;
+margin: 0 auto;
+width: 35%;
+}
+
+@media (max-width: 576px) {
+    .purchase{
+    width: 55%;
+    }
+}
