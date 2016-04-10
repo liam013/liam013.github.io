@@ -54,6 +54,7 @@ padding: 10px;
 margin-bottom: 30px;
 }
 .bodyText{
+display: block;
 margin-right: 30px;
 margin-left: 30px;
 background-color:rgba(0, 0, 0, 0.4);
