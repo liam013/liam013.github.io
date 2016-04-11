@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  
+  //retrieve JSON from jsonDatabase folder
 $.getJSON("jsonDatabase/wall.json",function(data){
 
     console.dir(data);
     
     var html = "";
     $.each(data.albums, function(index, item){
-        
+        //display the albums in a four column layout
      html += '<div class="col-md-3 col-sm-12">'+
              '<img class="albumImage" src="' + item.albumImage + '"/>' + "<br>" +
              '<div class="albumArtist">' + "<strong>Artist: </strong>" + item.artist + '</div>'+
@@ -25,6 +25,7 @@ $.getJSON("jsonDatabase/wall.json",function(data){
     var device = "";
     
      $.each(data.devices, function(ind, item){
+         //display the devices in a three column layout
      device += '<div class="col-md-4 col-sm-12">'+
              '<img class="deviceImage" src="' + item.deviceImage + '"/>' + "<br>" +
              '<div class="deviceName">' + "<strong>Product: </strong>" + item.device + '</div>'+

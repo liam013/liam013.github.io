@@ -1,17 +1,17 @@
 $(document).ready(function() {
-
+//hides a red asterisks next to 'Name:' 'E-mail:' 'Address:' 'Situation: ' sections on page load (these are used for validation and will appear if user forgets to enter a given field)
     $(".hide-name").hide();
     $(".hide-mail").hide();
     $(".hide-address").hide();
     $(".hide-case").hide();
     
 
-   
+   //setting the format for the datepicker 
       $('#startRentDate').datepicker({
       format: "MM dd, yyyy"
       
       })
-            
+       //disabling timeRanges for booking a appointment to mimic when a store would open, close and break for lunch.     
       $('#disableTimeRangesExample').timepicker({'disableTimeRanges': [
         ['12am', '8am'], //store opens
         ['12pm', '1:00pm'], //lunch break
@@ -21,28 +21,29 @@ $(document).ready(function() {
       { 'timeFormat': 'H:i A' },
       { 'scrollDefault': 'now' })
 
-   //if url ends with #buyConsultation check the "consultation" box in the services order form   
+   //if url ends with #buyConsultation (done by clicking 'Buy Now' under the Consulation column at the home page) check the "consultation" box in the services order form   
 if(window.location.href.indexOf("buyConsultation") > -1){
 $('#checkbox1').prop('checked', true);
 } 
     
-    //if url ends with #buyRepairs check the "repairs" box in the services order form
+    //if url ends with #buyRepairs (done by clicking 'Buy Now' under the Repairs column at the home page)  check the "repairs" box in the services order form
 if(window.location.href.indexOf("buyRepairs") > -1){
 $('#checkbox2').prop('checked', true);
 } 
     
-    //if url ends with #buyInstallation check the "installation" box in the services order form
+    //if url ends with #buyInstallation (done by clicking 'Buy Now' under the Installation column at the home page)  check the "installation" box in the services order form
 if(window.location.href.indexOf("buyInstallation") > -1){
 $('#checkbox3').prop('checked', true);
 } 
 
-    
+  //append "Button mouseenter" to the #log area of the page    
   //change button text on mouse enter
   $("#myButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
       $(this).text("complete order");
     })
   
+  //append "Button mouseleave" to the #log area of the page 
   //change button text on mouse leave
     .on("mouseleave", function() {
       $("#log").append("<br>Button mouseleave");
@@ -50,7 +51,6 @@ $('#checkbox3').prop('checked', true);
     });
 
 
-  //change the background color on focus to blue
   //append "name field entered" in the #log area of the page
   //change field background color to off-white
   $("#mySingleLineText").on("focus", function() {
@@ -110,24 +110,30 @@ $('#checkbox3').prop('checked', true);
     });
     
     //hour length of service
+     //append "length of service changed to: " in the #log area of the page
   $("#mySelect").on("change", function() {
-    //append "length of service change to: " in the #log area of the page
     var val = $(this).val();
-    $("#log").append("<br>Length of service changed to " + val);
-    
+    $("#log").append("<br>Length of service changed to " + val);  
   });
 
+    
+    //startDate of the service appointment
+    //append "Day of service changed to " in the #log area of the page
   $("#startRentDate").on("change", function(){
   var val = $(this).val();
   $("#log").append("<br>Day of service changed to " + val);
   });
     
+    
+    //startTime of the service appointment
+    //append "Time of service changed to " in the #log area of the page
  $("#disableTimeRangesExample").on("change", function(){
   var val = $(this).val();
   $("#log").append("<br>Time of service changed to " + val);
   });
 
-    //radio button 
+    //radio buttons used if the user wishes to receive additional e-mails about promotions and events in the area (notice this radio is checked to 'No' be default because people don't like receiving spam e-mails)
+    //append "Email notification changes to: " "yes" or "no" in the #log area of the page
   $('input:radio[name=gender]').change(function() {
         if (this.value == 'Yes') {
             $("#log").append("<br>" + "Email notification changed to: yes");
@@ -138,7 +144,9 @@ $('#checkbox3').prop('checked', true);
         }
     });
     
-    $('#checkbox1').change(function() {
+    
+    //if the first checkbox is checked append "Consultation service selected" to the #log area of the page
+        $('#checkbox1').change(function() {
         if($(this).is(":checked")) {
 
         $('#log').append("<br>" + "Consultation service selected"); 
@@ -148,6 +156,7 @@ $('#checkbox3').prop('checked', true);
         }
     });
     
+    //if the second checkbox is checked append "Repair service selected" to the #log area of the page
      $('#checkbox2').change(function() {
         if($(this).is(":checked")) {
 
@@ -157,6 +166,8 @@ $('#checkbox3').prop('checked', true);
         $('#log').append("<br>" + "Repair service removed"); 
         }
     });
+    
+    //if the third checkbox is checked append "Installation service selected" to the #log area of the page
     
      $('#checkbox3').change(function() {
         if($(this).is(":checked")) {
@@ -168,15 +179,16 @@ $('#checkbox3').prop('checked', true);
         }
     });
 
+    //once the 'Order Now' button is clicked, +1 to the value of the "label-as-badge" in the nav bar 
        $('.target').click(function() {
     $('#orderNumber').html(function(i, val) { return val*1+1 });
 })
 
-  //user clicks the button
+  //user clicks the order button
   $("#myButton").on("click", function() {
       
    
-      
+      //name validation, if name is blank alert user, boder of text field becomes red and the asterisks is now visible 
        if (document.getElementById("mySingleLineText").value == "") { 
         alert("Your forgot to enter your name");  
         $(".hide-name").show();
@@ -185,6 +197,7 @@ $('#checkbox3').prop('checked', true);
         return false;  // stop submission until textbox is not '' 
         }  
 
+      //e-mail validation, if name is blank alert user, boder of text field becomes red and the asterisks is now visible
          if (document.getElementById("mySingleLineText2").value == "") { 
         alert("Your forgot to enter your e-mail");  
             $(".hide-mail").show();
@@ -192,6 +205,8 @@ $('#checkbox3').prop('checked', true);
         return false;  // stop submission until textbox is not '' 
         }  
       
+      
+      //address validation, if name is blank alert user, boder of text field becomes red and the asterisks is now visible
          if (document.getElementById("mySingleLineText3").value == "") { 
         alert("Your forgot to enter your address");  
             $(".hide-adress").show();
@@ -199,6 +214,14 @@ $('#checkbox3').prop('checked', true);
         return false;  // stop submission until textbox is not '' 
         }  
       
+      
+      //service validation, if the user leaves all three service checkboxes blank, alert the user
+        if (!$("#checkbox1").is(':checked') && !$("#checkbox2").is(':checked') && !$("#checkbox3").is(':checked')){
+        alert("You forgot to select a service");
+        return false; // stops submission until a checkbox is checked
+        }
+      
+      //situation validation, this field is only to be filled out if the user selects either the "Repairs" or "Installation" services, alert user, boder of text field becomes red and the asterisks is now visible
         if (document.getElementById("myTextarea").value == "" && $('#checkbox2').is(":checked") || $('#checkbox3').is(":checked")){
         alert("You forgot to enter an explanation of your situation");
         $(".hide-case").show();
@@ -206,9 +229,10 @@ $('#checkbox3').prop('checked', true);
         return false;
         }
       
+      //situation auto-corrects if user selects "Consultation" to N/A because the field is not required 
         $("#myTextarea").text($(this).val() || "N/A");
       
-      
+      //date validation, alert user if they left the date field blank, border of field becomes red
         if (document.getElementById("startRentDate").value == "") { 
         alert("Your forgot to set a date for the service");  
            
@@ -216,6 +240,8 @@ $('#checkbox3').prop('checked', true);
         return false;  // stop submission until textbox is not '' 
         }
       
+      
+      //time validation, alert user if they left the time field blank, border of field becomes red
        if (document.getElementById("disableTimeRangesExample").value == "") { 
         alert("Your forgot to set a time for the service");  
            
@@ -223,26 +249,12 @@ $('#checkbox3').prop('checked', true);
         return false;  // stop submission until textbox is not '' 
         }
       
+      //append "User placed an order" to the #log area of the screen
     $("#log").append("<br>User placed an order");
 
         
  
-
-   // $("[name='vehicle']:checked").each(function() {
-   //   userOrder.myCheckValues.push($(this).val());
-   // });
-
-   // $("#rec").append("Name: " + userOrder.myInput);
-    //$("#rec").append("<br>E-mail: " + userOrder.myInput2);  
-    //$("#rec").append("<br>Address: " + userOrder.myInput3);  
-    //$("#rec").append("<br>Explanation: " + userOrder.myTextarea);
-    //$("#rec").append("<br>Duration of service: " + userOrder.mySelect);
-    //$("#rec").append("<br>Services: " + userOrder.myCheckValues.join());
-    //$("#rec").append("<br>E-mailing list: " + userOrder.myRadio + "<br><hr>");
-    
-     // alert("Your order is being proccessed");
-      
-      
+      //gathering data for JSON.stringify
          var order = {};
 
     var formData = $("input, select");
@@ -271,6 +283,7 @@ $('#checkbox3').prop('checked', true);
       userOrder.myCheckValues.push($(this).val());
     })
 
+     //this is the tidied up "reciept" area of the screen as serves as a second order summary page
     $("#rec").append("Name: " + userOrder.myInput);
     $("#rec").append("<br>E-mail: " + userOrder.myInput2);  
     $("#rec").append("<br>Address: " + userOrder.myInput3);  
@@ -292,26 +305,12 @@ $('#checkbox3').prop('checked', true);
 
         var myCheckValues = [];
 
-        //each is a jquery loop for objects/arrays
-        //each thing that is selected, do the function
-        //"this" is the element we are currently looking at
         $("[name='vehicle']:checked").each(function() {
           myCheckValues.push($(this).val());
         });
-/*
-        $("#log").append("<br>User clicked the button");
 
-        $("#log").append("<br>Value of input is: " + myInput);
-        $("#log").append("<br>Value of textarea is: " + myTextarea);
-        $("#log").append("<br>Value of select is: " + mySelect);
-        $("#log").append("<br>Value of radio button is: " + myRadio);
-        $("#log").append("<br>Value of checks is: " + myCheckValues.join());
-    */
-      
        
 
-
-        //if user leaves myTextArea blank, return the alert and highlight myTextArea red  
      
       
 })
