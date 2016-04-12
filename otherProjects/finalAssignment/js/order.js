@@ -283,7 +283,7 @@ $('#checkbox3').prop('checked', true);
       userOrder.myCheckValues.push($(this).val());
     })
 
-     //this is the tidied up "reciept" area of the screen as serves as a second order summary page
+     //this is the tidied up "reciept" area of the screen as serves as a second order summary section of the order form page
     $("#rec").append("Name: " + userOrder.myInput);
     $("#rec").append("<br>E-mail: " + userOrder.myInput2);  
     $("#rec").append("<br>Address: " + userOrder.myInput3);  
