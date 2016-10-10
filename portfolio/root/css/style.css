@@ -151,7 +151,14 @@ a {
     float: right;
     margin-top: 10px;
 }
-
+.fotoramaVid{
+ border: white solid 1px;
+    width: 600px;
+    margin-bottom: 20px;
+    height: 337.5px;
+    float: right;
+    margin-top: 10px;
+}
 /* image gallery plug-in ends */
 
 
